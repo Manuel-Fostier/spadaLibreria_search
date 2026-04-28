@@ -119,7 +119,7 @@ Tu sais que dans la partie précédente tu es resté avec ton épée en porta di
 
 Toi alors voyant cette ouverture, tu lui tireras un falso dritto de bas en haut aux mains, passant en tirant ce falso de ta jambe droite fortement vers son côté gauche bien proprement. Sans arrêter ce falso, tu tailleras un tramazzone en passant avec ta jambe gauche vers le côté droit de ton ennemi, de sorte qu'une fois ce tramazzone tiré, ton épée sera tombée en cinghiara porta di ferro stretta. Là, pour te couvrir, tu tireras un falso manco en fuyant de ta jambe gauche fortement derrière la droite, et tu tireras un peu tes bras à toi, mais pas trop, et ainsi tu t'arrangeras bien avec ton épée de nouveau en porta di ferro alta bien proprement.
 
-### <span id="page-49-0"></span>Huitième partie, et avec le falso tu seras agent.
+### Huitième partie, et avec le falso tu seras agent.
 
 Étant donc resté en **porta di ferro alta**, de là tu trouveras ton ennemi d'un falso manco de bas en haut qui percutera fortement son épée, et dans cette frappe, tu placeras le pied gauche près du pied droit. Ayant placé ce pied gauche, tu avanceras du droit fortement devant, et alors tu lui tireras deux mandritti tondi, un à la tête et l'autre à la jambe qui tirera et entrera en **guardia d'intrare non in largo passo** : c'est-à-dire tu tireras la jambe droite près de la gauche avec tes bras bien tendus droit vers l'ennemi. De sorte que si cet ennemi te tire à la partie supérieure, ou même s'il ne tire pas, tu avanceras de ta jambe gauche vers son côté droit, et alors tu lui donneras un roverso fendente à la tête, lequel tombera en **coda longa e alta**.
 
@@ -668,11 +668,11 @@ Ou bien quand tu auras fui avec la jambe droite par-dessus la gauche, avec celle
 
 Ou bien tu feras elza e fugie et tu fuiras et refuiras et tireras le roverso trivillato qui tire et entre en **guardia d'intrare** in largo passo. De cette façon, tu auras fait tous les contres à ses bottes qu'il te tire, donc n'oublie pas cela.
 
-<span id="page-99-0"></span>ICI SONT LES CONTRES QUAND TU ES EN **guardia d'intrare** in larga passo et que tu veux être patient : c'est à dire tu veux attendre que l'ennemi t'attaque en premier.
+ICI SONT LES CONTRES QUAND TU ES EN **guardia d'intrare** in larga passo et que tu veux être patient : c'est à dire tu veux attendre que l'ennemi t'attaque en premier.
 
 ## **Chap. 173. Des contres quand tu es en guardia d'intrare in largo passo et que quelqu'un vient t'assaillir.**
 
-<span id="page-99-1"></span>Si tu es assailli en étant en **guardia d'intrare** in largo passo, je veux que tu saches combien de contres peuvent se faire quand tu seras trouvé dans cette garde. Note pour règle certaine que comme tu es patient, tu feras qu'aussitôt tu sois agent avec les bottes qui suivent comme tu sais,
+Si tu es assailli en étant en **guardia d'intrare** in largo passo, je veux que tu saches combien de contres peuvent se faire quand tu seras trouvé dans cette garde. Note pour règle certaine que comme tu es patient, tu feras qu'aussitôt tu sois agent avec les bottes qui suivent comme tu sais,
 
 c'est-à-dire consens avec le pied droit derrière et tire un roverso en guardia distesa qui retourne en guardia di croce, et puis entre ou fuis avec l'épée en guardia di faccia.
 

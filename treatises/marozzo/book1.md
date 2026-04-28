@@ -65,7 +65,7 @@ De là tu retourneras le jeu en arrière en jetant le pied droit d'un grand pas 
 
 [...]
 
-# <span id="page-5-0"></span>Chapitre 14. Du contre de la première partie.
+# Chapitre 14. Du contre de la première partie.
 
 Étant dans la porta di ferro alta et ton ennemi te poussant cette punta, tu feras elza e fugie dans le temps où il la poussera et ton épée tombera en cinghiara porta di ferro larga. Ne t'arrêtant pas, tu tailleras un roverso en coda longa e distesa.
 
