@@ -40,6 +40,31 @@ def resolve_ollama_base_url() -> str | None:
         return raw
     return f"http://{raw}"
 
+import re
+
+def best_excerpt(text: str, query: str, window: int = 300) -> str:
+    """Return the ~window-char substring of text with the most query word overlap."""
+    query_words = set(w.lower() for w in re.findall(r"\w+", query) if len(w) > 3)
+    if not query_words or len(text) <= window:
+        return text[:window]
+
+    best_start = 0
+    best_score = -1
+    step = 50
+    for start in range(0, max(1, len(text) - window), step):
+        window_text = text[start : start + window].lower()
+        score = sum(1 for w in query_words if w in window_text)
+        if score > best_score:
+            best_score = score
+            best_start = start
+
+    excerpt = text[best_start : best_start + window]
+    if best_start > 0:
+        excerpt = "…" + excerpt
+    if best_start + window < len(text):
+        excerpt = excerpt + "…"
+    return excerpt
+
 
 def search_sources(query: str, source_ids: list[str], collection, embeddings: OllamaEmbeddings, n_results: int = N_RESULTS) -> list[dict]:
     query_embedding = embeddings.embed_query(query)
@@ -72,7 +97,7 @@ def search_sources(query: str, source_ids: list[str], collection, embeddings: Ol
     return hits
 
 
-def display_results(hits: list[dict], label: str):
+def display_results(hits: list[dict], label: str, query: str = ""):
     if not hits:
         console.print(f"[yellow]Aucun résultat pour : {label}[/yellow]")
         return
@@ -94,9 +119,7 @@ def display_results(hits: list[dict], label: str):
         if hit["subsection"]:
             section_str += f"\n  › {hit['subsection']}"
 
-        excerpt = hit["text"]
-        if len(excerpt) > 300:
-            excerpt = excerpt[:297] + "..."
+        excerpt = best_excerpt(hit["text"], query, window=300)
 
         table.add_row(score_str, source_str, section_str, excerpt)
 
@@ -207,7 +230,7 @@ Les source_ids suivent le pattern: auteur_livre (ex: marozzo_book3, anonimo_epee
     console.print(f"[dim]Paragraphe : {query[:150]}...[/dim]\n")
 
     hits_p1 = search_sources(query, sources_p1, collection, embeddings)
-    display_results(hits_p1, f"Phase 1 — {', '.join(sources_p1)}")
+    display_results(hits_p1, f"Phase 1 — {', '.join(sources_p1)}", query)
 
     if has_expansion and sources_p2 and hits_p1:
         console.print("\n[dim]🤖 Évaluation des résultats par le LLM...[/dim]")
@@ -223,10 +246,10 @@ Les source_ids suivent le pattern: auteur_livre (ex: marozzo_book3, anonimo_epee
         if is_conclusive:
             console.print(f"\n[bold]🔍 Recherche Phase 2[/bold] dans : [cyan]{', '.join(sources_p2)}[/cyan]")
             hits_p2 = search_sources(query, sources_p2, collection, embeddings)
-            display_results(hits_p2, f"Phase 2 — {', '.join(sources_p2)}")
+            display_results(hits_p2, f"Phase 2 — {', '.join(sources_p2)}", query)
 
             all_hits = sorted(hits_p1 + hits_p2, key=lambda x: x["score"], reverse=True)
-            display_results(all_hits[:5], "📊 Synthèse globale — Top 5")
+            display_results(all_hits[:5], "📊 Synthèse globale — Top 5", query)
         else:
             console.print("[yellow]Expansion annulée — résultats insuffisants en Phase 1.[/yellow]")
 
@@ -295,7 +318,7 @@ def main():
 
     if args.query and args.sources:
         hits = search_sources(args.query, args.sources, collection, embeddings)
-        display_results(hits, " + ".join(args.sources))
+        display_results(hits, " + ".join(args.sources), args.query)
     else:
         interactive_search(collection, embeddings, llm)
 
