@@ -4,6 +4,7 @@ Recherche sémantique dans les traités HEMA avec expansion conditionnelle.
 Usage:
     python search.py
     python search.py --query "votre paragraphe" --sources marozzo_book3 anonimo_epee_deux_mains
+    python search.py --sources marozzo_book3 --exclude-section 164 166 --query "votre paragraphe"
 """
 
 import argparse
@@ -28,6 +29,8 @@ LLM_MODEL = "llama3.2"
 
 SCORE_THRESHOLD = 0.75
 N_RESULTS = 5
+MIN_EXCERPT_CHARS = 350
+MAX_EXCERPT_CHARS = 1200
 
 
 def resolve_ollama_base_url() -> str | None:
@@ -40,10 +43,18 @@ def resolve_ollama_base_url() -> str | None:
         return raw
     return f"http://{raw}"
 
-import re
+def _excerpt_window_for_query(query: str) -> int:
+    """Size excerpt window from query length with sane limits."""
+    query_len = len(query.strip())
+    # Keep excerpt around query size, with small padding for context.
+    return max(MIN_EXCERPT_CHARS, min(MAX_EXCERPT_CHARS, query_len + 120))
 
-def best_excerpt(text: str, query: str, window: int = 300) -> str:
+
+def best_excerpt(text: str, query: str, window: int | None = None) -> str:
     """Return the ~window-char substring of text with the most query word overlap."""
+    if window is None:
+        window = _excerpt_window_for_query(query)
+
     query_words = set(w.lower() for w in re.findall(r"\w+", query) if len(w) > 3)
     if not query_words or len(text) <= window:
         return text[:window]
@@ -66,20 +77,45 @@ def best_excerpt(text: str, query: str, window: int = 300) -> str:
     return excerpt
 
 
-def search_sources(query: str, source_ids: list[str], collection, embeddings: OllamaEmbeddings, n_results: int = N_RESULTS) -> list[dict]:
+def _is_excluded_hit(meta: dict, exclude_sections: list[str]) -> bool:
+    if not exclude_sections:
+        return False
+    section = meta.get("section", "").lower()
+    subsection = meta.get("subsection", "").lower()
+    for token in exclude_sections:
+        t = token.lower().strip()
+        if t and (t in section or t in subsection):
+            return True
+    return False
+
+
+def search_sources(
+    query: str,
+    source_ids: list[str],
+    collection,
+    embeddings: OllamaEmbeddings,
+    n_results: int = N_RESULTS,
+    exclude_sections: list[str] | None = None,
+) -> list[dict]:
+    exclude_sections = exclude_sections or []
     query_embedding = embeddings.embed_query(query)
 
     where_filter = {"source_id": {"$in": source_ids}} if len(source_ids) > 1 else {"source_id": source_ids[0]}
 
+    fetch_multiplier = 4 if exclude_sections else 1
+
     results = collection.query(
         query_embeddings=[query_embedding],
-        n_results=n_results * len(source_ids),
+        n_results=n_results * len(source_ids) * fetch_multiplier,
         where=where_filter,
         include=["documents", "metadatas", "distances"],
     )
 
     hits = []
     for doc, meta, dist in zip(results["documents"][0], results["metadatas"][0], results["distances"][0]):
+        if _is_excluded_hit(meta, exclude_sections):
+            continue
+
         score = 1 - dist
         hits.append(
             {
@@ -94,7 +130,7 @@ def search_sources(query: str, source_ids: list[str], collection, embeddings: Ol
         )
 
     hits.sort(key=lambda x: x["score"], reverse=True)
-    return hits
+    return hits[: n_results * len(source_ids)]
 
 
 def display_results(hits: list[dict], label: str, query: str = ""):
@@ -119,7 +155,7 @@ def display_results(hits: list[dict], label: str, query: str = ""):
         if hit["subsection"]:
             section_str += f"\n  › {hit['subsection']}"
 
-        excerpt = best_excerpt(hit["text"], query, window=300)
+        excerpt = best_excerpt(hit["text"], query)
 
         table.add_row(score_str, source_str, section_str, excerpt)
 
@@ -296,6 +332,12 @@ def main():
     parser = argparse.ArgumentParser(description="HEMA Semantic Search")
     parser.add_argument("--query", type=str, help="Paragraphe à rechercher")
     parser.add_argument("--sources", nargs="+", help="source_ids à chercher")
+    parser.add_argument(
+        "--exclude-section",
+        nargs="+",
+        default=[],
+        help="Mots-clés de section/sous-section à exclure (ex: 164 166)",
+    )
     args = parser.parse_args()
 
     client = chromadb.PersistentClient(path=CHROMA_DIR)
@@ -317,7 +359,13 @@ def main():
     llm = ChatOllama(**llm_kwargs)
 
     if args.query and args.sources:
-        hits = search_sources(args.query, args.sources, collection, embeddings)
+        hits = search_sources(
+            args.query,
+            args.sources,
+            collection,
+            embeddings,
+            exclude_sections=args.exclude_section,
+        )
         display_results(hits, " + ".join(args.sources), args.query)
     else:
         interactive_search(collection, embeddings, llm)
