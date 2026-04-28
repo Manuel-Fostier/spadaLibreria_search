@@ -1,0 +1,11 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# ChromaDB generated files
+chroma_db/*
+!chroma_db/.gitkeep

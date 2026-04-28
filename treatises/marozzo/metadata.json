@@ -1,0 +1,11 @@
+{
+  "author": "Achille Marozzo",
+  "full_title": "Opera Nova dell'Arte delle Armi",
+  "year": "1536",
+  "language": "Italian",
+  "books": {
+    "book1": "marozzo_book1",
+    "book2": "marozzo_book2",
+    "book3": "marozzo_book3"
+  }
+}
