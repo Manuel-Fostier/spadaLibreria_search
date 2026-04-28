@@ -30,7 +30,7 @@ def resolve_ollama_base_url() -> str | None:
     return f"http://{raw}"
 
 MIN_CHUNK_CHARS = 200
-MAX_CHUNK_CHARS = 1500
+MAX_CHUNK_CHARS = 5000
 
 
 def split_into_paragraphs(text: str, metadata: dict) -> list[dict]:
