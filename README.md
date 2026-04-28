@@ -20,6 +20,68 @@ ollama pull llama3.2
 ollama pull nomic-embed-text
 ```
 
+### Cas WSL (Ollama installé sur Windows hôte)
+
+Si vous lancez les scripts depuis WSL mais qu'Ollama tourne sur Windows, l'API doit être accessible depuis WSL.
+
+1. Sur Windows, démarrez Ollama en exposant le service:
+
+```powershell
+$env:OLLAMA_HOST = "0.0.0.0:11434"
+ollama serve
+```
+
+2. Dans WSL, récupérez l'IP de l'hôte Windows (passerelle par défaut) et exportez l'URL:
+
+```bash
+WIN_HOST=$(ip route | awk '/default/ {print $3; exit}')
+export OLLAMA_BASE_URL="http://$WIN_HOST:11434"
+```
+
+Si la passerelle ne répond pas dans votre environnement, essayez le fallback:
+
+```bash
+WIN_HOST=$(awk '/nameserver/ {print $2; exit}' /etc/resolv.conf)
+export OLLAMA_BASE_URL="http://$WIN_HOST:11434"
+```
+
+3. Testez l'accès:
+
+```bash
+curl "$OLLAMA_BASE_URL/api/tags"
+```
+
+4. Rendez la configuration persistante dans `~/.zshrc`:
+
+```bash
+cat <<'EOF' >> ~/.zshrc
+
+# Auto-configure Ollama URL in WSL if not explicitly set.
+if grep -qi microsoft /proc/version 2>/dev/null; then
+  if [[ -z "$OLLAMA_BASE_URL" && -z "$OLLAMA_HOST" ]]; then
+    WIN_HOST=$(ip route 2>/dev/null | awk '/default/ {print $3; exit}')
+    if [[ -z "$WIN_HOST" ]]; then
+      WIN_HOST=$(awk '/nameserver/ {print $2; exit}' /etc/resolv.conf 2>/dev/null)
+    fi
+    if [[ -n "$WIN_HOST" ]]; then
+      export OLLAMA_BASE_URL="http://$WIN_HOST:11434"
+    fi
+    unset WIN_HOST
+  fi
+fi
+EOF
+```
+
+5. Rechargez votre shell puis vérifiez:
+
+```bash
+source ~/.zshrc
+echo "$OLLAMA_BASE_URL"
+curl "$OLLAMA_BASE_URL/api/tags"
+```
+
+Les scripts `ingest.py` et `search.py` utilisent automatiquement `OLLAMA_BASE_URL` (ou `OLLAMA_HOST`).
+
 ## Installation
 
 ```bash

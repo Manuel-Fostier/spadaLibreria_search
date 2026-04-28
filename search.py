@@ -8,6 +8,7 @@ Usage:
 
 import argparse
 import json
+import os
 import re
 
 import chromadb
@@ -27,6 +28,17 @@ LLM_MODEL = "llama3.2"
 
 SCORE_THRESHOLD = 0.75
 N_RESULTS = 5
+
+
+def resolve_ollama_base_url() -> str | None:
+    """Resolve Ollama URL from env and normalize host:port values to http://host:port."""
+    raw = os.getenv("OLLAMA_BASE_URL") or os.getenv("OLLAMA_HOST")
+    if not raw:
+        return None
+    raw = raw.strip()
+    if raw.startswith("http://") or raw.startswith("https://"):
+        return raw
+    return f"http://{raw}"
 
 
 def search_sources(query: str, source_ids: list[str], collection, embeddings: OllamaEmbeddings, n_results: int = N_RESULTS) -> list[dict]:
@@ -264,14 +276,22 @@ def main():
     args = parser.parse_args()
 
     client = chromadb.PersistentClient(path=CHROMA_DIR)
-    embeddings = OllamaEmbeddings(model=EMBED_MODEL)
+    ollama_base_url = resolve_ollama_base_url()
+    embeddings_kwargs = {"model": EMBED_MODEL}
+    llm_kwargs = {"model": LLM_MODEL, "temperature": 0.1}
+    if ollama_base_url:
+        embeddings_kwargs["base_url"] = ollama_base_url
+        llm_kwargs["base_url"] = ollama_base_url
+        console.print(f"[dim]Ollama URL: {ollama_base_url}[/dim]")
+
+    embeddings = OllamaEmbeddings(**embeddings_kwargs)
 
     class OllamaEmbeddingFunction(chromadb.EmbeddingFunction):
         def __call__(self, input: list[str]) -> list:
             return embeddings.embed_documents(input)
 
     collection = client.get_collection(name=COLLECTION_NAME, embedding_function=OllamaEmbeddingFunction())
-    llm = ChatOllama(model=LLM_MODEL, temperature=0.1)
+    llm = ChatOllama(**llm_kwargs)
 
     if args.query and args.sources:
         hits = search_sources(args.query, args.sources, collection, embeddings)

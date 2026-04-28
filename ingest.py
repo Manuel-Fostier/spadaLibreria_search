@@ -5,6 +5,7 @@ Usage: python ingest.py
 
 import frontmatter
 import chromadb
+import os
 from pathlib import Path
 from langchain_ollama import OllamaEmbeddings
 from rich.console import Console
@@ -16,6 +17,17 @@ TREATISES_DIR = Path("treatises")
 CHROMA_DIR = "./chroma_db"
 COLLECTION_NAME = "hema_treatises"
 EMBED_MODEL = "nomic-embed-text"
+
+
+def resolve_ollama_base_url() -> str | None:
+    """Resolve Ollama URL from env and normalize host:port values to http://host:port."""
+    raw = os.getenv("OLLAMA_BASE_URL") or os.getenv("OLLAMA_HOST")
+    if not raw:
+        return None
+    raw = raw.strip()
+    if raw.startswith("http://") or raw.startswith("https://"):
+        return raw
+    return f"http://{raw}"
 
 MIN_CHUNK_CHARS = 200
 MAX_CHUNK_CHARS = 1500
@@ -120,7 +132,12 @@ def main():
     console.print("[bold cyan]🗡  HEMA Treatise Indexer[/bold cyan]\n")
 
     client = chromadb.PersistentClient(path=CHROMA_DIR)
-    embeddings = OllamaEmbeddings(model=EMBED_MODEL)
+    ollama_base_url = resolve_ollama_base_url()
+    embeddings_kwargs = {"model": EMBED_MODEL}
+    if ollama_base_url:
+        embeddings_kwargs["base_url"] = ollama_base_url
+        console.print(f"[dim]Ollama URL: {ollama_base_url}[/dim]")
+    embeddings = OllamaEmbeddings(**embeddings_kwargs)
 
     class OllamaEmbeddingFunction(chromadb.EmbeddingFunction):
         def __call__(self, input: list[str]) -> list:
