@@ -115,6 +115,17 @@ python search.py --sources marozzo_book3 anonimo_epee_deux_mains \
   --query "Quando voi fare un colpo di taglia, si deve avanzare il piede destro..."
 ```
 
+### 4. Recherche multi-query
+
+Chaque requête est exécutée séparément et affichée dans son propre tableau, précédé du texte exact de la requête.
+
+```bash
+python search.py --sources marozzo_book3 \
+  --query "falso dritto de bas en haut aux mains, porta di ferro alta" \
+  --query "Guardia di faccia" \
+  --query "Guardia di Croce"
+```
+
 ## Format des traités
 
 Chaque fichier `.md` doit avoir un frontmatter YAML :

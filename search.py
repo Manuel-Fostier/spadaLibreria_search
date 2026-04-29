@@ -4,8 +4,13 @@ Recherche sémantique dans les traités HEMA avec expansion conditionnelle.
 Usage:
     python search.py
     python search.py --query "votre paragraphe" --sources marozzo_book3 anonimo_epee_deux_mains
+    python search.py --sources marozzo_book3 --query "requête 1" --query "requête 2"
     python search.py --sources marozzo_book3 --exclude-section 164 166 --query "votre paragraphe"
     python search.py --sources marozzo_book3 --include-section 161 --exclude-section 164 166 --n-results 10 --query "votre paragraphe"
+    python search.py list --sources marozzo_book3
+    python search.py list --sources marozzo_book3 marozzo_book1
+    python search.py show --sources marozzo_book3 --section "161"
+    python search.py show --sources marozzo_book3 --section "161" --subsection "cinquième"
 """
 
 import argparse
@@ -150,6 +155,25 @@ def search_sources(
     return hits[: n_results * len(source_ids)]
 
 
+def _highlight_excerpt(excerpt: str, query: str, min_len: int = 4) -> str:
+    """Wrap query words found in excerpt with Rich bold yellow markup."""
+    if not query:
+        return excerpt
+    query_words = sorted(
+        set(w.lower() for w in re.findall(r"\w+", query) if len(w) >= min_len),
+        key=len,
+        reverse=True,  # replace longer words first to avoid partial matches
+    )
+    result = excerpt
+    for word in query_words:
+        result = re.sub(
+            rf"(?i)({re.escape(word)})",
+            r"[bold yellow]\1[/bold yellow]",
+            result,
+        )
+    return result
+
+
 def display_results(hits: list[dict], label: str, query: str = ""):
     if not hits:
         console.print(f"[yellow]Aucun résultat pour : {label}[/yellow]")
@@ -173,6 +197,7 @@ def display_results(hits: list[dict], label: str, query: str = ""):
             section_str += f"\n  › {hit['subsection']}"
 
         excerpt = best_excerpt(hit["text"], query)
+        excerpt = _highlight_excerpt(excerpt, query) if query else excerpt
 
         table.add_row(score_str, source_str, section_str, excerpt)
 
@@ -243,6 +268,67 @@ def list_sources(collection):
         table.add_row(sid, info["author"], info["book"], info["title"])
 
     console.print(table)
+
+
+def list_sections(source_ids: list[str], collection):
+    results = collection.get(include=["metadatas"], limit=10000)
+    # Collect (section, subsection) pairs per source
+    seen: set[tuple[str, str, str]] = set()
+    rows: list[tuple[str, str, str]] = []
+    for meta in results["metadatas"]:
+        sid = meta.get("source_id", "")
+        if sid not in source_ids:
+            continue
+        section = meta.get("section", "")
+        subsection = meta.get("subsection", "")
+        key = (sid, section, subsection)
+        if key not in seen:
+            seen.add(key)
+            rows.append(key)
+
+    rows.sort()
+    table = Table(title="📑 Sections", box=box.ROUNDED, show_lines=False)
+    table.add_column("Source", style="cyan", no_wrap=True)
+    table.add_column("Section", style="yellow")
+    table.add_column("Sous-section", style="white")
+
+    def _trunc(s: str, n: int = 50) -> str:
+        return s if len(s) <= n else s[:n] + "…"
+
+    for sid, section, subsection in rows:
+        table.add_row(sid, _trunc(section), _trunc(subsection) if subsection else "[dim]—[/dim]")
+
+    console.print(table)
+
+
+def show_chunks(source_ids: list[str], collection, section_kw: str, subsection_kw: str = ""):
+    """Affiche tous les chunks correspondant aux mots-clés de section/sous-section."""
+    results = collection.get(include=["metadatas"], limit=10000)
+    matches = []
+    for meta in results["metadatas"]:
+        if meta.get("source_id", "") not in source_ids:
+            continue
+        section = meta.get("section", "").lower()
+        subsection = meta.get("subsection", "").lower()
+        if section_kw.lower() not in section:
+            continue
+        if subsection_kw and subsection_kw.lower() not in subsection:
+            continue
+        matches.append(meta)
+
+    if not matches:
+        console.print("[yellow]Aucun chunk trouvé pour ces critères.[/yellow]")
+        return
+
+    for i, meta in enumerate(matches, start=1):
+        section_str = meta.get("section", "")
+        subsection_str = meta.get("subsection", "")
+        header = f"[bold cyan]Chunk {i}[/bold cyan]  [yellow]{section_str}[/yellow]"
+        if subsection_str:
+            header += f"  [dim]›[/dim] [white]{subsection_str}[/white]"
+        console.print(header)
+        console.print(meta.get("original_text", ""))
+        console.print("[dim]" + "─" * 80 + "[/dim]")
 
 
 def process_prompt(prompt: str, collection, embeddings, llm):
@@ -347,7 +433,13 @@ def interactive_search(collection, embeddings, llm):
 
 def main():
     parser = argparse.ArgumentParser(description="HEMA Semantic Search")
-    parser.add_argument("--query", type=str, help="Paragraphe à rechercher")
+    parser.add_argument("command", nargs="?", choices=["list", "show"], help="Sous-commandes : 'list' liste les sections, 'show' affiche les chunks d'une section")
+    parser.add_argument(
+        "--query",
+        type=str,
+        action="append",
+        help="Paragraphe à rechercher. Répétez --query pour lancer plusieurs recherches séparées.",
+    )
     parser.add_argument("--sources", nargs="+", help="source_ids à chercher")
     parser.add_argument(
         "--include-section",
@@ -367,16 +459,50 @@ def main():
         default=N_RESULTS,
         help=f"Nombre de résultats à afficher (défaut: {N_RESULTS})",
     )
+    parser.add_argument(
+        "--section",
+        type=str,
+        default="",
+        help="Mot-clé de section pour la commande show (ex: 161)",
+    )
+    parser.add_argument(
+        "--subsection",
+        type=str,
+        default="",
+        help="Mot-clé de sous-section pour la commande show (ex: cinquième)",
+    )
     args = parser.parse_args()
 
     client = chromadb.PersistentClient(path=CHROMA_DIR)
     ollama_base_url = resolve_ollama_base_url()
+
+    # list/show ne nécessitent pas Ollama — on évite la connexion inutile
+    if args.command in ("list", "show"):
+        if not args.sources:
+            console.print(f"[red]--sources requis avec la commande {args.command}.[/red]")
+            return
+
+        class _DummyEmbedFn(chromadb.EmbeddingFunction):
+            def __call__(self, input: list[str]) -> list:
+                return []
+
+        collection = client.get_collection(name=COLLECTION_NAME, embedding_function=_DummyEmbedFn())
+        if args.command == "list":
+            list_sections(args.sources, collection)
+        else:
+            if not args.section:
+                console.print("[red]--section requis avec la commande show.[/red]")
+                return
+            show_chunks(args.sources, collection, args.section, args.subsection)
+        return
+
+    if ollama_base_url:
+        console.print(f"[dim]Ollama URL: {ollama_base_url}[/dim]")
     embeddings_kwargs = {"model": EMBED_MODEL}
     llm_kwargs = {"model": LLM_MODEL, "temperature": 0.1}
     if ollama_base_url:
         embeddings_kwargs["base_url"] = ollama_base_url
         llm_kwargs["base_url"] = ollama_base_url
-        console.print(f"[dim]Ollama URL: {ollama_base_url}[/dim]")
 
     embeddings = OllamaEmbeddings(**embeddings_kwargs)
 
@@ -388,16 +514,23 @@ def main():
     llm = ChatOllama(**llm_kwargs)
 
     if args.query and args.sources:
-        hits = search_sources(
-            args.query,
-            args.sources,
-            collection,
-            embeddings,
-            n_results=max(1, args.n_results),
-            exclude_sections=args.exclude_section,
-            include_sections=args.include_section,
-        )
-        display_results(hits, " + ".join(args.sources), args.query)
+        queries = [query.strip() for query in args.query if query and query.strip()]
+        if not queries:
+            console.print("[red]Aucune requête valide fournie.[/red]")
+            return
+
+        for index, query in enumerate(queries, start=1):
+            hits = search_sources(
+                query,
+                args.sources,
+                collection,
+                embeddings,
+                n_results=max(1, args.n_results),
+                exclude_sections=args.exclude_section,
+                include_sections=args.include_section,
+            )
+            console.print(f"\n[bold cyan]Requête {index}[/bold cyan]\n[white]{query}[/white]")
+            display_results(hits, " + ".join(args.sources), query)
     else:
         interactive_search(collection, embeddings, llm)
 

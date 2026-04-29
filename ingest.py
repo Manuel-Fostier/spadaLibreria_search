@@ -3,6 +3,7 @@ Indexation des traités HEMA dans ChromaDB.
 Usage: python ingest.py
 """
 
+import argparse
 import frontmatter
 import chromadb
 import os
@@ -85,6 +86,33 @@ def _make_chunk(lines: list, section: str, subsection: str, metadata: dict) -> d
     }
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Indexer des traites HEMA Markdown dans une collection ChromaDB locale.",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=(
+            "Fonctionnement global:\n"
+            "  1) Lecture des fichiers .md (frontmatter YAML + contenu)\n"
+            "  2) Decoupage en chunks par section/sous-section\n"
+            "  3) Generation d'embeddings via Ollama\n"
+            "  4) Insertion des chunks et metadonnees dans ChromaDB\n\n"
+            "Bibliotheques utilisees:\n"
+            "  - frontmatter: lecture frontmatter YAML\n"
+            "  - chromadb: stockage vectoriel local\n"
+            "  - langchain_ollama: embeddings via Ollama\n"
+            "  - rich: affichage console/progression\n"
+            "  - pathlib/os: gestion des chemins et environnement"
+        ),
+    )
+    parser.add_argument("--treatises-dir", default=str(TREATISES_DIR), help="Dossier racine des traites markdown")
+    parser.add_argument("--chroma-dir", default=CHROMA_DIR, help="Dossier de persistence ChromaDB")
+    parser.add_argument("--collection-name", default=COLLECTION_NAME, help="Nom de la collection ChromaDB")
+    parser.add_argument("--embed-model", default=EMBED_MODEL, help="Modele d'embedding Ollama")
+    parser.add_argument("--min-chunk-chars", type=int, default=MIN_CHUNK_CHARS, help="Taille minimale d'un chunk")
+    parser.add_argument("--max-chunk-chars", type=int, default=MAX_CHUNK_CHARS, help="Taille maximale cible d'un chunk")
+    return parser.parse_args()
+
+
 def ingest_file(filepath: Path, collection) -> int:
     post = frontmatter.load(filepath)
     meta = dict(post.metadata)
@@ -129,6 +157,16 @@ def ingest_file(filepath: Path, collection) -> int:
 
 
 def main():
+    global TREATISES_DIR, CHROMA_DIR, COLLECTION_NAME, EMBED_MODEL, MIN_CHUNK_CHARS, MAX_CHUNK_CHARS
+
+    args = parse_args()
+    TREATISES_DIR = Path(args.treatises_dir)
+    CHROMA_DIR = args.chroma_dir
+    COLLECTION_NAME = args.collection_name
+    EMBED_MODEL = args.embed_model
+    MIN_CHUNK_CHARS = args.min_chunk_chars
+    MAX_CHUNK_CHARS = args.max_chunk_chars
+
     console.print("[bold cyan]🗡  HEMA Treatise Indexer[/bold cyan]\n")
 
     client = chromadb.PersistentClient(path=CHROMA_DIR)
