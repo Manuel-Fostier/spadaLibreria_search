@@ -6,7 +6,7 @@ source_id: "manciolino_opera_nova"
 language: "fr"
 ---
 
-## **OPERA NOVA** **Antonio Manciolino**
+## OPERA NOVA Antonio Manciolino
 
 # Au plus illustre Don Luigi de Cordoba, Duc de Sessa, ambassadeur du plus serein empereur Hadrien VI
 
@@ -38,7 +38,7 @@ Contre les joueurs qui font leurs coups avec une grande rage, ce qui souvent eng
 
 Bien que la frappe à la main de l’ennemi ne soit pas valide dans le compte du jeu au coup, elle sera la plus singulière à frapper dans le combat parce qu’elle est la première à se découvrir et aussi le membre de l’ennemi qui pourra le plus t’offenser.
 
-Le plus admirable des coups est le *mandritto* parce qu’il est le plus courtois et le plus noble et qu’il se fait avec beaucoup de difficulté et de danger. Ainsi frapper du *mandritto* est plus dangereux que du *roverso* car ce premier fait aller l’homme totalement découvert dans le temps, et il est donc ainsi le plus admirable.
+Le plus admirable des coups est le mandritto parce qu’il est le plus courtois et le plus noble et qu’il se fait avec beaucoup de difficulté et de danger. Ainsi frapper du mandritto est plus dangereux que du roverso car ce premier fait aller l’homme totalement découvert dans le temps, et il est donc ainsi le plus admirable.
 
 On doit toujours avoir les yeux à la main d’épée de l’ennemi plutôt qu’à son visage, parce que de là on voit tout ce qu’il compte faire.
 
@@ -62,7 +62,7 @@ Les joueurs qui font beaucoup de coups sans mesure et sans temps, bien qu’ils 
 
 Si l’on se trouve près de l’ennemi, l’on ne doit jamais tirer de coups finis, parce que l’épée ne doit pas s’éloigner de la personne pour la sécurité de celui qui la tient. Et frapper de ce coup imparfait est nommé un demi-temps.
 
-Se trouvant deux joueurs ayant une égale science de l’art de sorte qu’aucun ne puisse donner à son compagnon de façon sûre*. *L’un peut avec mes conseils provoquer la chance en espérant vaincre avec l’une de ces deux façons. C’est-à-dire soit avoir l’œil pour tirer dans le même temps que l’ennemi aura pris. Soit il peut lui donner du mieux qu’il soit possible, et aussitôt se jeter contre lui en l’enlaçant, cela fait, chacun estimera lequel est le vainqueur.
+Se trouvant deux joueurs ayant une égale science de l’art de sorte qu’aucun ne puisse donner à son compagnon de façon sûre. L’un peut avec mes conseils provoquer la chance en espérant vaincre avec l’une de ces deux façons. C’est-à-dire soit avoir l’œil pour tirer dans le même temps que l’ennemi aura pris. Soit il peut lui donner du mieux qu’il soit possible, et aussitôt se jeter contre lui en l’enlaçant, cela fait, chacun estimera lequel est le vainqueur.
 
 Si quelqu’un veut faire tirer un coup à l’ennemi afin de le parer pour l’atteindre dans ce temps, il convient qu’il le fasse trois ou quatre fois de suite en faisant cela à la façon d’une invitation. Et parce qu’il est de coutume aux joueurs de singer, l’adversaire sera tenté de faire de même. Ainsi on lui aura fait tirer le coup que l’on désire.
 
@@ -76,17 +76,17 @@ L’utilisation d’armes lourdes et l’amusement de frapper long et tendu nour
 
 Dans l’art de l’épée affûtée, il ne faut pas départir des gardes basses, car elles sont plus sauves que les hautes. Et la raison est que te trouvant dans une garde haute tu pourras être atteint d’un estoc ou d’un coup de taille aux jambes, alors dans les gardes basses, ces coups ne sont pas un danger.
 
-Ceux qui auront le plaisir de parer les coups donnés avec le falso*[^1]* de l’épée seront des joueurs valeureux parce qu’il n’existe pas de meilleure et plus forte parade, et parce qu’elle pare et frappe presque dans un temps.
+Ceux qui auront le plaisir de parer les coups donnés avec le falso[^1] de l’épée seront des joueurs valeureux parce qu’il n’existe pas de meilleure et plus forte parade, et parce qu’elle pare et frappe presque dans un temps.
 
 Ni combattant, ni aucun joueur ne doit se laisser vaincre par la surabondance des coups ou par l’arrogance. Parce qu’alors il se privera de courage et le laissera entièrement à l’ennemi.
 
 Le plaisir de l’épée seule est d’autant plus utile que celui des autres armes. Car la personne est très peu souvent accompagnée des autres armes en main comme de la rondache ou de la bocle, alors que l’on peut toujours avoir l’épée seule.
 
-Si l’on combat contre un gaucher, le déplacement continu vers son épée est le meilleur moyen pour se défendre. Et quand il tire un *roverso,* on tire un *mandritto* à sa main d’épée. Et s’il tire un *mandritto*, l’on tire un *roverso* à la main ou au bras d’épée. Et cela promet une victoire sans doute.
+Si l’on combat contre un gaucher, le déplacement continu vers son épée est le meilleur moyen pour se défendre. Et quand il tire un roverso, on tire un mandritto à sa main d’épée. Et s’il tire un mandritto, l’on tire un roverso à la main ou au bras d’épée. Et cela promet une victoire sans doute.
 
 Le déplacement équitable avec chacun des pieds suivant le temps et la nécessité est une chose très utile et profitable. Néanmoins, je crois que se déplacer en ayant toujours les pieds égaux est d’une plus grande utilité parce qu’ainsi l’on peut avancer et reculer sans désavantager la personne. J’ajoute également que l’homme peut ainsi jouer plus fortement que dans d’autres façons. Et quand je dis à pieds égaux, je signifie que les pieds ne sont pas éloignés de plus que la mesure d’un demi-bras, en accompagnant toujours la main avec les pieds et les pieds avec la main.
 
-Chacun peut se nommer parfait dans cet art comme dans d’autres s’il peut l’enseigner aux autres. Parce que comme le dit le philosophe dans l’*Éthique* : le signe de la science est de savoir enseigner.
+Chacun peut se nommer parfait dans cet art comme dans d’autres s’il peut l’enseigner aux autres. Parce que comme le dit le philosophe dans l’Éthique : le signe de la science est de savoir enseigner.
 
 Jouant avec l’épée à deux mains au jeu large, on aura toujours les yeux sur la partie avant, du milieu de l’épée vers la pointe. Mais si on arrive aux estrettes de la mi-épée, on aura les yeux à la main gauche afin que l’ennemi ne nous fasse pas de prise de cette main.
 
@@ -120,43 +120,43 @@ On ne doit jamais exposer le dessein de ses coups à l’autre, mais au contrair
 
 Parce que le valeureux art des armes amène constamment avec lui des gardes protectrices pour sa sécurité, dont dix sont renommées et qui sont vingt en tout avec leurs divers noms, j’ai jugé utile de décrire celles-ci en premier lieu parce qu’en les apprenant avant, elles feront le champ libre et spacieux et apporteront ainsi plus de lumière au reste de l’œuvre. Ici, donc commençons avec l’aide divine. 
 
-**La guardia alta**
+La guardia alta
 
 La première garde sera nommée haute, parce qu’elle se prend élégamment au-dessus de la personne, l’épée empoignée avec le bras le plus haut qu'on puisse le lever, de sorte que l'épée vienne à rester en arrière. Le bras tenant la bocle doit se tendre bien en avant vers l'ennemi autant que possible et le pied droit doit être arrangé environ quatre doigts devant le gauche avec le talon un peu soulevé. Et les deux genoux resteront droits et non arqués. On peut encore faire cette garde de deux autres façons : soit en faisant un grand pas en avant avec le pied droit, soit avec un grand pas de la même façon avec le gauche, tout en tenant l'épée et la bocle de la façon précédente. Et chaque fois que l'épée se trouvera empoignée avec le bras tendu en l'air, cette garde se nommera toujours haute peu importe la façon dont on arrange les pieds, parce que son nom vient non pas des pieds, mais de l'arrangement que prend l'épée.
 
-**La guardia di testa**
+La guardia di testa
 
 La seconde est dite garde de tête et elle se fait en étendant les bras de façon identique vers l'ennemi, de sorte que quand tu auras étendu les poings, ils se trouveront quasiment à la hauteur des épaules. Dans cette garde, les mains diffèrent seulement dans le fait que la main d'épée doit se trouver un peu plus basse que celle de la bocle. Et pour en venir aux pieds, je dis qu'ils peuvent se trouver dans un grand pas de deux façons, soit avec le droit devant, soit avec le gauche, et néanmoins cela sera la même garde pour la même raison que pour la précédente.
 
-**La guardia di faccia**
+La guardia di faccia
 
 La troisième se dit garde de face, elle est identique en deux points à la précédente et en diffère sur un seul. Ainsi, non seulement elle est semblable sur l'arrangement des pieds en pouvant être soit avec le droit soit avec le gauche devant, mais aussi dans la hauteur des bras. Et la seule différence est que dans la précédente on tient l'épée de travers et que dans celle-ci on la tient droite avec la pointe vers la face de l'ennemi et la main armée de la bocle par-dessus celle-ci.
 
-**La guardia di sopra braccio**
+La guardia di sopra braccio
 
 La quatrième est dite garde de dessus le bras parce que la main empoignant l'épée vient à la façon d'une croix reposer au milieu du bras gauche, en tenant la pointe vers l'arrière. Et en conséquence, le bras de bocle sera bien tendu vers l'ennemi. Quant aux pieds, je dis que la première façon est d'avoir le pied droit restant un peu devant le gauche sans le toucher. On peut de même faire cette même garde en faisant un grand pas avec le pied droit et en se penchant un peu avec grande élégance. Et on s'arrangera toujours pour garder la main d'épée par-dessus et au milieu du bras gauche parce qu'autrement cette garde changerait de nom pour la même raison que celle dite pour la première. Néanmoins, le bras pourra s’écarter un peu, car avant il était serré. Ainsi l'épaule droite viendra à regarder à l'encontre de l'ennemi de sorte que tu l’attaqueras là où cela te paraîtra le mieux.
 
-**La guardia di sotto bracio**
+La guardia di sotto bracio
 
 La cinquième est dite garde de sous le bras parce que la main d'épée doit rester sous le bras de bocle, c'est-à-dire sous l'aisselle, en tenant l'épée avec la pointe qui regarde derrière et avec le bras de bocle bien tendu vers l'ennemi. Et pour les pieds, je dis que le droit doit s'arranger de la même façon que précédemment, soit un peu devant le gauche, soit dans un grand pas. Et si l’on se met dans un grand pas, il convient que l'épaule droite soit dirigée vers l'ennemi de la même façon que pour la quatrième garde.
 
-**La garde de porta di ferro stretta**
+La garde de porta di ferro stretta
 
 La sixième garde se nomme porta di ferro stretta. Dans celle-ci, la personne doit s'arranger de travers de sorte que l'épaule droite (comme il est dit ci-dessus) regarde l'ennemi. Les deux bras doivent s’amener également à l'encontre de l'ennemi de sorte que le bras d'épée soit étendu droitement vers le bas pour la défense du genou droit et de telle façon que le poing d'épée soit prés et au milieu de ce genou. Et le bras de bocle doit lui être étendu droitement aussi vers l'ennemi, ni en haut, ni en bas, afin de garder la tête. Pour les pieds, le droit doit s'arranger dans un grand pas avec le genou dirigé de même vers l'ennemi et un peu courbé de sorte que la garde le défende. Le pied gauche est aussi de travers avec le genou un peu courbé. Et cela est ainsi nommé une porta di ferro stretta car elle est la plus sûre de toute et forte comme le fer. Et à la différence de la large (de laquelle nous traiterons ici après), on pousse l'épée vers l'ennemi en se restreignant de la même façon à la défense des genoux. 
 
-**De la porta di ferro larga**
+De la porta di ferro larga
 
 La septième garde est nommée porta di ferro larga et celle-ci a pour origine la précédente, parce que ni les pieds, ni la personne ne bougent de la position précédente. Seule la main d'épée se déplace du genou et fait tomber la pointe au sol vers l’intérieur du genou droit. Et de par cela, elle est dite large parce que l'épée s’éloigne de ce genou droit pour donner une meilleure ouverture sur la personne que la précédente.
 
-**De la garde cinghiara porta di ferro**
+De la garde cinghiara porta di ferro
 
 La huitième garde se nomme cinghiara porta di ferro et dans celle-ci le pied gauche s'avance de travers en pliant un peu le genou et en gardant la jambe droite tendue. La main d'épée doit rester avec le poing devant le genou gauche comme il est fait dans la porta di ferro de laquelle elle tient aussi son nom en grande partie. Et la main gauche restera étendue pour la défense de la tête avec la bocle comme peu de fois j’ai dit avant. Elle est dite cinghiara parce que l'animal qui porte ce même nom attaque avec la tête et ses défenses arrangées de travers de la même façon pour frapper. 
 
-**De la garde de coda longa e alta**
+De la garde de coda longa e alta
 
 La neuvième garde est dite coda longa e alta avec le pied gauche devant en pliant un peu le genou. Les pieds doivent rester droits vers l'ennemi dans un grand pas. Le bras droit est bien tendu vers ce dernier avec l'épée bien empoignée et de travers de sorte que la pointe regarde bien l'ennemi. Le bras de bocle lui est bien tendu vers la face de l'ennemi. Et non seulement cette garde, mais aussi les suivantes, ont pour origine cette garde de coda longa e alta. Comme dans celle où l’on est arrangé avec les pieds de la manière précédente et en tenant le bras d'épée étendu en arrière et à laquelle on donne le nom en conséquence. Car comme le dit le proverbe commun, l'on ne doit pas déplaire aux grands maîtres parce que cela a de longues conséquences, c'est-à-dire qu'ils peuvent vous offenser avec de multiples suites. Ainsi, on donne ce même nom à cette neuvième garde ainsi qu'à la dixième car elles ont beaucoup de façons d'atteindre et d'offenser le compagnon, et c'est pourquoi on l’appelle coda longa e alta.
 
-**De la garde de coda longa e stretta**
+De la garde de coda longa e stretta
 
 La dixième garde se nomme coda longa e stretta avec le pied droit devant dans un grand pas, de façon néanmoins à ce que le genou se plie un peu de travers. Les deux bras doivent rester comme dans la garde précédente, excepté que le bras d'épée se repose un peu plus bas. Et toutes ces précédentes gardes sont suffisantes pour notre œuvre.
 
@@ -478,7 +478,7 @@ Mais avant de commencer à parler du propos[^11], nous enseignerons à venir au 
 
 # Le premier assaut
 
-**Aller au jeu**
+Aller au jeu
 
 Premièrement, t’opposant à ton ennemi, tu te placeras dans un coin de la salle ou d’un autre emplacement spacieux, joyeusement arrangé de ta personne, debout avec l’épée et la bocle en mains de sorte que chaque mouvement, chaque façon et chaque geste soient pleins de grâce.
 
@@ -654,7 +654,7 @@ Alors qu’avec cela les auteurs ornent leurs écrits avec délicatesse, ceux-ci
 
 Tandis que certains composent sur le membre laineux des dieux mi chèvre, ou les cornes de leurs fronts, ou leurs mouvements lascifs, ou leurs simples et rustiques tromperies, non à l'écrit mais en peinture, on montre les déesses anxieuses dans le lointain. Certaines élévent leur vétements pourpre sur leur blanc genous, avec des meches blondes de leurs cheveux tombant par-dessus leurs épaules douces, ou bien en tresses, dans lesquelles le vent souffle. D’autres se jettent dans les rivières claires et coulantes, pour protéger leur virginité consacrée à Diane. Fuyantes et harassées de fatigue, certaines en viennent à rester cachées derrière les buissons épais, telle la rosée matinale qui vient souvent avec l’apparition du soleil, et jouent avec leurs doigts fins de leurs mains blanches de ces perles de verres et viennent à perdre leur anxiété.
 
-Mais mon sujet n’est pas de proposer à tous de tels élégances, ainsi les lecteurs éduqués me pardonneront donc que je n’apporte pas plus que des *mandritti, riversi, falsi et punte* ainsi que d’autres termes dont je ne pourrai pas changer le nom si je veux être compris dans mon art. Au contraire de la signification de “passer” que j'écris continuellement avec ma plume, ainsi si souvent il m'advint de dire que le joueur passe avec le pied gauche ou droit devant que j’en arrive à dire aussi *passare, varcare, valicare, scorrere, scorgere, guidare, condure* le pied. Et où je dis le droit, je dis aussi à la place sa dextre, ou son fort, ou son valide, parce que l’homme a naturellement plus de force du côté droit que du côté gauche. Et de même pour le gauche qui est dit senestre ou faible afin d'échapper aux fastidieuses répétitions car il n’y a pas de chose plus odieuses que la fréquente répétition d’une même chose par un même mot.
+Mais mon sujet n’est pas de proposer à tous de tels élégances, ainsi les lecteurs éduqués me pardonneront donc que je n’apporte pas plus que des mandritti, riversi, falsi et punte ainsi que d’autres termes dont je ne pourrai pas changer le nom si je veux être compris dans mon art. Au contraire de la signification de “passer” que j'écris continuellement avec ma plume, ainsi si souvent il m'advint de dire que le joueur passe avec le pied gauche ou droit devant que j’en arrive à dire aussi passare, varcare, valicare, scorrere, scorgere, guidare, condure le pied. Et où je dis le droit, je dis aussi à la place sa dextre, ou son fort, ou son valide, parce que l’homme a naturellement plus de force du côté droit que du côté gauche. Et de même pour le gauche qui est dit senestre ou faible afin d'échapper aux fastidieuses répétitions car il n’y a pas de chose plus odieuses que la fréquente répétition d’une même chose par un même mot.
 
 Bien qu’il me soit clair que de telles répétitions peuvent plaire à ceux dont les oreilles chastes ont l’habitude des chants doux et tristes de Philomène, néanmoins s’ils ont la poigne d’un homme, ils devraient lire cet œuvre pour son propos dans lequel les ornementations ne manquent point. Continuant donc mon instruction, je dis que dans ce troisième livre j’enseignerai l'art du jeu à la mi-épée. Sache que souvent quand tu joues avec ton ennemi, vous êtes amenés aux estrettes qu'il vous convient de jouer à la mi-épée non sans ingéniosité et sans grand art. Néanmoins, parmi tous les autres (arts), celui-ci tient la place principale. Et celui qui n'a pas une connaissance parfaite et optimale de ses bases ne pourra être un bon maître par aucune façon. Et bien qu'il existe de bons joueurs ou défenseurs qui soient dotés de mains rapides, ils ne pourront néanmoins pas enseigner ce véritable art lequel consiste à rester fort. Et l’on dit de ceux-là qu'ils ne sont pas dotés de science mais de chance quand ils font quelques touches.
 
@@ -674,59 +674,59 @@ Si tu n'arrives pas à l'offenser de la façon susdite en étant toujours à la 
 
 Le contre à cette offense est que quand il voudra te donner ce coup de pied, tu lui percuteras aussitôt le tibia de sa jambe attaquante avec la bocle afin qu'il ne réalise pas son dessein.
 
-**La troisième façon** d'offenser est que te retrouvant avec le pied gauche devant, tu passeras vers son côté gauche avec le pied droit en faisant semblant de le frapper d'un mandritto à la tête. Néanmoins, dans cette feinte tu laisseras tomber au sol ton épée par derrière, et en passant aussitôt avec le pied gauche vers son côté droit, tu chasseras ta tête sous son aisselle droite et ta main droite à l'intérieur de ses cuisses. Tu le soulèveras alors du sol et le feras tomber par derrière tes épaules.
+La troisième façon d'offenser est que te retrouvant avec le pied gauche devant, tu passeras vers son côté gauche avec le pied droit en faisant semblant de le frapper d'un mandritto à la tête. Néanmoins, dans cette feinte tu laisseras tomber au sol ton épée par derrière, et en passant aussitôt avec le pied gauche vers son côté droit, tu chasseras ta tête sous son aisselle droite et ta main droite à l'intérieur de ses cuisses. Tu le soulèveras alors du sol et le feras tomber par derrière tes épaules.
 
 Le contre à la précédente estrette et offense est que pendant qu'il fera semblant de te donner du mandritto, tu ne feras voir aucune riposte à cette feinte. Et quand il laissera tomber l'épée pour mettre sa tête sous ton aisselle, tu te retireras d'un grand pas du pied droit et lui donneras un roverso dans le cou.
 
-**La quatrième façon** d'offenser sera qu'en ayant le pied droit devant, tu feras semblant de lui frapper la tempe gauche d'un mandritto. Et dans cette feinte, tu laisseras tourner l'épée à la façon d'un molinello. Mais en passant aussitôt avec le pied gauche vers son côté droit, tu lui donneras un roverso dans sa tempe droite.
+La quatrième façon d'offenser sera qu'en ayant le pied droit devant, tu feras semblant de lui frapper la tempe gauche d'un mandritto. Et dans cette feinte, tu laisseras tourner l'épée à la façon d'un molinello. Mais en passant aussitôt avec le pied gauche vers son côté droit, tu lui donneras un roverso dans sa tempe droite.
 
 Le contre est que quand il fera la feinte de mandritto, tu serreras la main d'épée avec celle de la bocle. Et dans le déplacement qu'il fera du pied gauche pour te donner un roverso, tu tireras aussitôt la jambe gauche derrière la droite et tu le frapperas d'un mezzo mandritto dans sa tempe gauche à la façon d'une guardia di faccia. Et en faisant cela, son roverso ne pourra pas t'offenser.
 
-**La cinquième façon** d'offenser sera qu'en ayant ce dit pied droit devant, tu passeras ta main d'épée de bas en haut par l'intérieur de sa main d'épée, faisant tomber celle-ci un peu vers le bas pour que tu puisses lui chasser le falso dans son cou.
+La cinquième façon d'offenser sera qu'en ayant ce dit pied droit devant, tu passeras ta main d'épée de bas en haut par l'intérieur de sa main d'épée, faisant tomber celle-ci un peu vers le bas pour que tu puisses lui chasser le falso dans son cou.
 
 Le contre à cette offense est que pendant que l'ennemi voudra mettre sa main de la façon démontrée, toi avec ta main tu pousseras son bras d'épée vers son côté gauche et ainsi il ne réalisera pas son intention.
 
-**La sixième façon** est que te retrouvant bien avec ce pied devant, tu peux passer avec le pied gauche vers son côté droit en lui donnant de ta main de bocle à l'extérieur de sa main d'épée. Et tu suivras d'un roverso dans le cou ou la tête.
+La sixième façon est que te retrouvant bien avec ce pied devant, tu peux passer avec le pied gauche vers son côté droit en lui donnant de ta main de bocle à l'extérieur de sa main d'épée. Et tu suivras d'un roverso dans le cou ou la tête.
 
 Le contre à cette sixième façon est que pendant qu'il guidera le pied gauche devant pour te donner dans la main de bocle, tu lui donneras aussitôt du rebord de ta bocle dans son bras arrivant. 
 
-**La septième façon** est qu'étant bien arrangé avec ce pied devant, tu peux passer d'un grand pas avec le pied gauche vers son côté droit en lui tirant un roverso de bas en haut. Ensuite en passant aussitôt avec ton pied droit vers son côté gauche, tu lui donneras un mandritto à la façon d'un fendente en faisant que ta jambe gauche suive la droite par derrière.
+La septième façon est qu'étant bien arrangé avec ce pied devant, tu peux passer d'un grand pas avec le pied gauche vers son côté droit en lui tirant un roverso de bas en haut. Ensuite en passant aussitôt avec ton pied droit vers son côté gauche, tu lui donneras un mandritto à la façon d'un fendente en faisant que ta jambe gauche suive la droite par derrière.
 
 Le contre à cette septième façon est que quand il avancera avec le pied gauche devant pour te frapper de ce roverso, tu iras en guardia di faccia avec la bocle par dessous la main d'épée de sorte que la main touche et soit couverte par la bocle. Et quand il tournera le mandritto à la façon d'un fendente, tu lui donneras aussitôt un mezzo mandritto à sa main d'épée en jetant le pied droit derrière.
 
-**La huitième façon** est qu'ayant le pied gauche devant, tu avanceras avec le droit vers son côté droit en tirant en arrière ton épée par dessous la sienne. Et dans ce même temps, tu pousseras ta bocle sous sa main d'épée en le frappant avec le falso au cou à son côté gauche. Ensuite, en laissant aller la jambe gauche derrière la droite, tu t'arrangeras avec l'épée en guardia di faccia. Puis en retirant le pied droit en arrière, tu lui frapperas la tempe d'un roverso spinto.
+La huitième façon est qu'ayant le pied gauche devant, tu avanceras avec le droit vers son côté droit en tirant en arrière ton épée par dessous la sienne. Et dans ce même temps, tu pousseras ta bocle sous sa main d'épée en le frappant avec le falso au cou à son côté gauche. Ensuite, en laissant aller la jambe gauche derrière la droite, tu t'arrangeras avec l'épée en guardia di faccia. Puis en retirant le pied droit en arrière, tu lui frapperas la tempe d'un roverso spinto.
 
 Le contre de la précédente façon est que quand l'ennemi tirera l'épée en arrière par dessous la tienne, tu te retireras de la présence en arrière avec ton pied droit et tu t'arrangeras en guardia di faccia.
 
-**La neuvième façon** d'offenser sera en étant aussi avec le pied gauche devant. Tu pourras avancer avec le pied droit devant en faisant semblant de frapper l'ennemi à la tête d'un mandritto. Et dans cette feinte, tu feras la méthode Pérugine. C’est-à-dire que tu jetteras ton épée et ta bocle et tu lui prendras ses deux bras. Et l'ayant ainsi fortement serré, sans t'en séparer tu te laisseras tomber en arrière, et aussitôt tu lèveras tes pieds joints et les lui donneras fortement dans le ventre. Le retournant alors par cette percussion, il viendra à être jeté par derrière tes bras.
+La neuvième façon d'offenser sera en étant aussi avec le pied gauche devant. Tu pourras avancer avec le pied droit devant en faisant semblant de frapper l'ennemi à la tête d'un mandritto. Et dans cette feinte, tu feras la méthode Pérugine. C’est-à-dire que tu jetteras ton épée et ta bocle et tu lui prendras ses deux bras. Et l'ayant ainsi fortement serré, sans t'en séparer tu te laisseras tomber en arrière, et aussitôt tu lèveras tes pieds joints et les lui donneras fortement dans le ventre. Le retournant alors par cette percussion, il viendra à être jeté par derrière tes bras.
 
 Le contre à cette offense est que pendant qu'il passera avec le pied droit pour faire semblant du mandritto, tu resteras attentif en ayant les yeux fixés à ses mains en raison de la prise. Et quand tu le verras faire tomber l'épée et la bocle, tu lui frapperas aussitôt la tête d'un roverso en te retirant avec le pied droit derrière.
 
-**La dixième façon** d'offenser avec le pied gauche devant sera en passant avec le pied droit vers son côté droit en percutant son épée d'un vaillant mandritto. Ensuite, en allant vers le même côté droit avec le pied gauche, tu lui donneras un roverso dans le cou en faisant que le pied droit suive le gauche.
+La dixième façon d'offenser avec le pied gauche devant sera en passant avec le pied droit vers son côté droit en percutant son épée d'un vaillant mandritto. Ensuite, en allant vers le même côté droit avec le pied gauche, tu lui donneras un roverso dans le cou en faisant que le pied droit suive le gauche.
 
 Le contre sera que quand il mènera son pied fortement comme il est dit au-dessus pour te donner un mandritto dans l'épée, tu le frapperas avec ton épée pour arrêter celui-ci. Et quand il passera pour te frapper de roverso, toi dans ce temps tu lui tourneras à la face un mezzo mandritto.
 
-**La onzième façon** d'offenser est en te trouvant aussi avec le pied gauche devant. Tu avanceras fortement avec le pied droit vers son côté gauche et dans ce pas tu feras semblant de le frapper d'un mandritto. Mais en fait tu lui percuteras la cuisse d'un beau roverso. Et tu resteras découvert au côté supérieur pour inciter l'ennemi à t'attaquer à cet endroit. Et quand il fera ce que tu veux, tu pareras avec l'épée en guardia di testa et ensuite avec la main de bocle tu lui prendras l'épée par l'intérieur en lui donnant un fendente à la tête ou bien une punta à la face. La contre sera qu'aussitôt qu'il s'avancera pour faire la feinte de mandritto, tu ne feras aucun mouvement à celle-ci. Et quand il voudra frapper de roverso à la cuisse, tu tourneras la pointe de l'épée vers le sol et ainsi tu te couvriras de cela. Alors tu riposteras en lui tirant un fendente à la tête.
+La onzième façon d'offenser est en te trouvant aussi avec le pied gauche devant. Tu avanceras fortement avec le pied droit vers son côté gauche et dans ce pas tu feras semblant de le frapper d'un mandritto. Mais en fait tu lui percuteras la cuisse d'un beau roverso. Et tu resteras découvert au côté supérieur pour inciter l'ennemi à t'attaquer à cet endroit. Et quand il fera ce que tu veux, tu pareras avec l'épée en guardia di testa et ensuite avec la main de bocle tu lui prendras l'épée par l'intérieur en lui donnant un fendente à la tête ou bien une punta à la face. La contre sera qu'aussitôt qu'il s'avancera pour faire la feinte de mandritto, tu ne feras aucun mouvement à celle-ci. Et quand il voudra frapper de roverso à la cuisse, tu tourneras la pointe de l'épée vers le sol et ainsi tu te couvriras de cela. Alors tu riposteras en lui tirant un fendente à la tête.
 
-**La douzième façon** d'offenser sera que te trouvant avec le pied droit devant, tu peux lui tirer un mandritto à la tête. Et si c'est un bon joueur, il frappera celui-ci. Et aussitôt tu feras semblant de lui donner un roverso en penchant la tête mais tu lui donneras en fait à nouveau un mandritto. Le contre est que quand il voudra t'offenser à la tête avec le mandritto, tu lui tireras un roverso de bas en haut qui va en guardia di testa pour te couvrir de son mandritto. Là, tu chasseras aussitôt ta main de bocle à son épée par en bas en le frappant d’un roverso au côté supérieur ou ailleurs si cela te plaît plus.
+La douzième façon d'offenser sera que te trouvant avec le pied droit devant, tu peux lui tirer un mandritto à la tête. Et si c'est un bon joueur, il frappera celui-ci. Et aussitôt tu feras semblant de lui donner un roverso en penchant la tête mais tu lui donneras en fait à nouveau un mandritto. Le contre est que quand il voudra t'offenser à la tête avec le mandritto, tu lui tireras un roverso de bas en haut qui va en guardia di testa pour te couvrir de son mandritto. Là, tu chasseras aussitôt ta main de bocle à son épée par en bas en le frappant d’un roverso au côté supérieur ou ailleurs si cela te plaît plus.
 
-**La treizième façon** sera que te trouvant bien avec le pied droit devant, tu feras semblant de lui donner un mandritto pour néanmoins lui tirer un roverso à la façon d'une punta trivellata.
+La treizième façon sera que te trouvant bien avec le pied droit devant, tu feras semblant de lui donner un mandritto pour néanmoins lui tirer un roverso à la façon d'une punta trivellata.
 
 Son contre est que quand il fera ladite feinte, alors tu ne bougeras pas. Mais s'il tire de roverso, tu ramèneras le pied droit en arrière et l'épée en guardia di faccia.
 
-**La quatorzième façon** est qu'en ayant de même le pied droit devant, tu passeras en avant avec le gauche et tu feras avec l'épée une demi-volte du poing en lui poussant dans ce tour une punta dans la face.
+La quatorzième façon est qu'en ayant de même le pied droit devant, tu passeras en avant avec le gauche et tu feras avec l'épée une demi-volte du poing en lui poussant dans ce tour une punta dans la face.
 
 Le contre à cela est que dans le pas qu'il fera du pied gauche, tu amèneras rapidement le pied droit en arrière pour t'arranger en coda longa e alta.
 
-**La quinzième offense** est qu'étant avec ce même pied devant, tu feras semblant de lui frapper la tête d'un mandritto. Et pendant que l'ennemi voudra s'en défendre par peur, tu lui donneras un roverso à la cuisse en t'arrangeant en guardia di faccia.
+La quinzième offense est qu'étant avec ce même pied devant, tu feras semblant de lui frapper la tête d'un mandritto. Et pendant que l'ennemi voudra s'en défendre par peur, tu lui donneras un roverso à la cuisse en t'arrangeant en guardia di faccia.
 
 Son contre sera que dans la feinte que te fera ton ennemi, tu ne bougeras pas. Et quand il voudra te frapper la cuisse d'un roverso, tu lui donneras un roverso dans le bras d'épée en ramenant le pied droit en arrière.
 
-L**a seizième offense**, aussi avec le pied droit devant, est que tu peux montrer de lui donner un roverso à la tête et néanmoins le frapper d'un mandritto au flanc. Et tu t'arrangeras en guardia di faccia.
+La seizième offense, aussi avec le pied droit devant, est que tu peux montrer de lui donner un roverso à la tête et néanmoins le frapper d'un mandritto au flanc. Et tu t'arrangeras en guardia di faccia.
 
 Son contre est que pendant que ton ennemi te montre de faire le roverso, tu tireras le pied droit en arrière. Et quand il estimera te frapper du mandritto au flanc, tu lui frapperas la main d'épée d'un mezzo mandritto accompagné de la bocle.
 
-**La dix-septième** manière est que te trouvant bien avec le pied droit devant, tu pousseras la bocle sous l'épée adverse. Puis en allant avec le pied gauche vers son côté droit, tu lui donneras un mandritto à travers sa cuisse droite de sorte que le pied droit suive le gauche.
+La dix-septième manière est que te trouvant bien avec le pied droit devant, tu pousseras la bocle sous l'épée adverse. Puis en allant avec le pied gauche vers son côté droit, tu lui donneras un mandritto à travers sa cuisse droite de sorte que le pied droit suive le gauche.
 
 Le contre est que quand il voudra pousser sa bocle sous ton épée, tu te retireras de sa présence avec le pied droit en arrière et tu lui donneras un mandritto accompagné de la bocle dans la main d'épée.
 
@@ -738,67 +738,67 @@ Donc étant à droit fil contre droit fil et toi voulant être agent en premier,
 
 Le contre de cette première façon est que pendant qu'il avancera pour te donner du roverso, tu lui tourneras un mezzo mandritto à la tête qui s'arrêtera au final en guardia di faccia. 
 
-**La seconde façon** d'offenser est qu'étant bien avec le pied droit, tu marcheras avec le gauche vers son côté droit en lui donnant un roverso de bas en haut à son bras d'épée. Et aussitôt, tu retireras le pied gauche derrière en lui donnant dans ce même temps un mandritto au visage.
+La seconde façon d'offenser est qu'étant bien avec le pied droit, tu marcheras avec le gauche vers son côté droit en lui donnant un roverso de bas en haut à son bras d'épée. Et aussitôt, tu retireras le pied gauche derrière en lui donnant dans ce même temps un mandritto au visage.
 
 Le contre est que quand il passera pour te donner du roverso, toi en te plaçant sous la bocle tu seras couvert. Et pendant qu'il retirera le pied gauche en arrière pour frapper de mandritto, tu lui atteindras la tempe droite d'un roverso transversal.
 
-**La troisième façon** est qu'en ayant bien le pied droit devant comme dans chacune des offenses présentées, ce que je ne répèterai pas pour éviter l'ennui, tu lui tourneras un roverso dans sa tempe droite. Si l'ennemi s'en défend, tu frapperas aussitôt avec tes quillons ou ta garde, comme tu veux, dans l'épée de l'ennemi au côté extérieur en lui donnant un fendente à la tête.
+La troisième façon est qu'en ayant bien le pied droit devant comme dans chacune des offenses présentées, ce que je ne répèterai pas pour éviter l'ennui, tu lui tourneras un roverso dans sa tempe droite. Si l'ennemi s'en défend, tu frapperas aussitôt avec tes quillons ou ta garde, comme tu veux, dans l'épée de l'ennemi au côté extérieur en lui donnant un fendente à la tête.
 
 Le contre sera que pendant qu'il tournera ce roverso, tu t'en défendras avec le droit fil de ton épée. Et quand il voudra frapper ton épée avec ses quillons, tu lèveras la tienne rapidement en haut pour que son coup manque. Et dans ce temps tu lui donneras un roverso dans la tête.
 
-**La quatrième façon** d'offenser est que tu peux lui faire croire que tu frappes de roverso et lui tourner aussitôt le pommeau de ton épée par-dessus le poignet de la main ennemie par l'extérieur en marchant avec le pied gauche vers son côté droit. Et tu le presseras de telle sorte que tu puisses lui frapper la tête d'un roverso.
+La quatrième façon d'offenser est que tu peux lui faire croire que tu frappes de roverso et lui tourner aussitôt le pommeau de ton épée par-dessus le poignet de la main ennemie par l'extérieur en marchant avec le pied gauche vers son côté droit. Et tu le presseras de telle sorte que tu puisses lui frapper la tête d'un roverso.
 
 Le contre est que dans la feinte de roverso qu'il fera, tu ne bougeras pas. Et quand il voudra tourner avec le pommeau, rapidement en mettant ta bocle sous son épée, tu lui atteindras la cuisse droite d'un roverso transversal.
 
-**La cinquième façon** d'offenser est que tu peux mener ton pied gauche vers son côté gauche en faisant semblant de le frapper d'un roverso néanmoins retourner avec le gauche en arrière en lui donnant un fendente dans la tête.
+La cinquième façon d'offenser est que tu peux mener ton pied gauche vers son côté gauche en faisant semblant de le frapper d'un roverso néanmoins retourner avec le gauche en arrière en lui donnant un fendente dans la tête.
 
 Le contre est que quand il fera semblant du roverso, tu ne bougeras pas. Et quand il voudra tourner le fendente à la tête, tu tireras aussitôt un roverso de bas en haut qui ira jusqu’en guardia di testa.
 
-**La sixième façon** d'offenser sera que tu passeras d'un grand pas devant avec le pied gauche vers son côté gauche en lui tirant un roverso de bas en haut à son bras d'épée. Tu feras ensuite une prise, c'est-à-dire que tu feras semblant de le frapper de la bocle à la tête, et quand il bougera la tête par peur de cela, en chassant aussitôt ton bras de bocle par l'intérieur de son épée, tu le lieras en l'amenant avec une grande oppression sous ton aisselle gauche. Là, en retirant le pied droit derrière le gauche, tu feras qu'il ne pourra pas t'offenser de la bocle.
+La sixième façon d'offenser sera que tu passeras d'un grand pas devant avec le pied gauche vers son côté gauche en lui tirant un roverso de bas en haut à son bras d'épée. Tu feras ensuite une prise, c'est-à-dire que tu feras semblant de le frapper de la bocle à la tête, et quand il bougera la tête par peur de cela, en chassant aussitôt ton bras de bocle par l'intérieur de son épée, tu le lieras en l'amenant avec une grande oppression sous ton aisselle gauche. Là, en retirant le pied droit derrière le gauche, tu feras qu'il ne pourra pas t'offenser de la bocle.
 
 Le contre sera que pendant qu'il passera du pied gauche de ladite façon pour te donner du roverso, tu pousseras ta main d'épée bien devant la bocle en couvrant l'ouverture. Et dans la feinte qu'il fera de te donner de la bocle dans la face, tu étendras fortement l'épée en avant de sorte qu'il ait une raison de te lier les bras de la façon dite. Et quand il estimera te les prendre, tu serreras le bras venu vers toi en le chassant fortement en bas, comprends par cela il devra abandonner la bocle écrasé par la douleur. Ainsi tu pourras lui frapper la face d'un roverso à ta volonté.
 
-**La septième façon** d'offenser sera que tu lui feras voir de donner un roverso et aussitôt tu lui donneras un mandritto à la jambe, revenant avec l'épée en guardia di faccia.
+La septième façon d'offenser sera que tu lui feras voir de donner un roverso et aussitôt tu lui donneras un mandritto à la jambe, revenant avec l'épée en guardia di faccia.
 
 Le contre est que pendant qu'il fera la feinte de roverso, tu ne bougeras pas. Et quand il voudra frapper de ce mandritto, tu jetteras le pied droit en arrière en lui donnant un mandritto transversal dans le bras d'épée.
 
-**La huitième façon** est que tu feras semblant de lui donner un roverso à la tête. Tu passeras ensuite du pied gauche vers son côté droit et tu mettras ta bocle sous son épée en lui tirant un mandritto à la jambe, avec le pied droit suivant le gauche par derrière.
+La huitième façon est que tu feras semblant de lui donner un roverso à la tête. Tu passeras ensuite du pied gauche vers son côté droit et tu mettras ta bocle sous son épée en lui tirant un mandritto à la jambe, avec le pied droit suivant le gauche par derrière.
 
 Le contre est que pendant qu'il fera la feinte de donner un roverso, tu garderas les yeux à ses mains sans bouger. Et quand il passera avec le pied gauche pour te donner le mandritto, aussitôt en retirant ton pied droit derrière, tu lui donneras un mezzo mandritto à la main d'épée.
 
-**La neuvième façon** d'offenser est que tu passeras avec le pied gauche vers son côté droit en lui percutant la tempe droite d'un roverso. Et tu lui donneras aussitôt du rebord de la bocle dans la face.
+La neuvième façon d'offenser est que tu passeras avec le pied gauche vers son côté droit en lui percutant la tempe droite d'un roverso. Et tu lui donneras aussitôt du rebord de la bocle dans la face.
 
 Le contre à cela est que dans le pas qu'il fera pour t'offenser du roverso, tu tireras en arrière le pied droit et tu t'arrangeras en guardia di faccia.
 
-**La dixième façon** est que tu passeras avec le pied gauche vers son côté droit en lui donnant un roverso dans sa tempe droite. Là, tu retourneras un peu en arrière avec le pied gauche en faisant semblant de lui donner un mandritto à la tête. En retournant ensuite de ce pied gauche vers son côté droit, tu lui frapperas la tête d'un roverso en laissant aller le pied droit derrière le gauche.
+La dixième façon est que tu passeras avec le pied gauche vers son côté droit en lui donnant un roverso dans sa tempe droite. Là, tu retourneras un peu en arrière avec le pied gauche en faisant semblant de lui donner un mandritto à la tête. En retournant ensuite de ce pied gauche vers son côté droit, tu lui frapperas la tête d'un roverso en laissant aller le pied droit derrière le gauche.
 
 Son contre sera que dans le pas que l'ennemi fera pour te donner le roverso, tu le frapperas avec le droit fil de l'épée. Pendant qu'il fera semblant du mandritto, tu iras avec l'épée en guardia di faccia. Quand il voudra donner l'autre roverso, aussitôt en jetant le pied droit vers son côté gauche tu lui frapperas la tempe gauche d'un mezzo mandritto.
 
-**La onzième offense** est que tu lui tireras un roverso dans sa tempe droite en lui donnant du talon gauche dans le ventre. Et là, en retournant en arrière du pied gauche, tu lui percuteras la tête d'un mandritto.
+La onzième offense est que tu lui tireras un roverso dans sa tempe droite en lui donnant du talon gauche dans le ventre. Et là, en retournant en arrière du pied gauche, tu lui percuteras la tête d'un mandritto.
 
 Le contre à cela est que tu frapperas avec le droit fil dans la frappe qu'il fera de roverso. Et quand il voudra te percuter avec son talon, tu lui donneras aussitôt de la bocle dans le tibia. Enfin, tu iras en guardia di faccia pour te protéger du mandritto.
 
-**La douzième offense** est que tu marcheras d'un grand pas avec le pied gauche vers son côté droit en faisant semblant de lui donner un roverso. Néanmoins, tu tireras le poing d'épée vers l'arrière en mettant ta bocle sous sa main d'épée et en lui donnant une punta dans la face.
+La douzième offense est que tu marcheras d'un grand pas avec le pied gauche vers son côté droit en faisant semblant de lui donner un roverso. Néanmoins, tu tireras le poing d'épée vers l'arrière en mettant ta bocle sous sa main d'épée et en lui donnant une punta dans la face.
 
 Le contre à cela est que dans la feinte qu'il fera de roverso, tu t'opposeras à celle-ci avec le droit fil. Pendant qu'il tirera son épée en arrière pour te donner une punta, tu t'opposeras à nouveau bien avec le droit fil en chassant l'épée de l'ennemi vers ton côté gauche. Ainsi, tu te seras défendu de sa punta. Puis tu lui pousseras aussi rapidement que possible un falso dans la face.
 
-**La treizième offense** est que tu passeras avec le pied gauche vers son côté droit en lui tirant en même temps un roverso transversal à sa cuisse droite. En te faisant petit, tu t'arrangeras en guardia di testa avec la jambe droite suivant la gauche par derrière.
+La treizième offense est que tu passeras avec le pied gauche vers son côté droit en lui tirant en même temps un roverso transversal à sa cuisse droite. En te faisant petit, tu t'arrangeras en guardia di testa avec la jambe droite suivant la gauche par derrière.
 
 Le contre est que quand il passera pour te donner du roverso, tu te retireras en arrière du pied droit et tu lui en donneras un de fait dans le bras d'épée.
 
-**La quatorzième offense** est que tu marcheras du pied gauche vers son côté droit en faisant voir de le percuter d'un roverso à la tête. Néanmoins, tu passeras avec le droit vers son côté gauche en lui frappant la tête d'un fendente de sorte que la jambe droite suive derrière la gauche.
+La quatorzième offense est que tu marcheras du pied gauche vers son côté droit en faisant voir de le percuter d'un roverso à la tête. Néanmoins, tu passeras avec le droit vers son côté gauche en lui frappant la tête d'un fendente de sorte que la jambe droite suive derrière la gauche.
 
 Le contre est que dans le pas qu'il fera avec la feinte de roverso, tu serreras l'épée et la bocle ensemble. Et quand il marchera pour te donner le fendente, tu lui tourneras un roverso à sa tempe droite.
 
-**La quinzième offense** est qu'en retirant l'épée en arrière tu lui pousseras une punta dans sa tempe droite en compagnie de la bocle et avec le pied droit qui suit le gauche afin d'esquiver tout coup nocif.
+La quinzième offense est qu'en retirant l'épée en arrière tu lui pousseras une punta dans sa tempe droite en compagnie de la bocle et avec le pied droit qui suit le gauche afin d'esquiver tout coup nocif.
 
 Le contre est que quand il fera cette punta, tu la frapperas avec le falso de l'épée en lui donnant un mandritto dans la face.
 
-**La seizième offense** est que tu marcheras avec le pied gauche d'un grand pas vers son côté droit et dans ce déplacement tu prendras l'épée de l'ennemi au milieu avec la main de bocle en lui frappant la tempe droite d'un roverso.
+La seizième offense est que tu marcheras avec le pied gauche d'un grand pas vers son côté droit et dans ce déplacement tu prendras l'épée de l'ennemi au milieu avec la main de bocle en lui frappant la tempe droite d'un roverso.
 
 Le contre est que dans le pas qu'il fera afin de faire cette prise, tu lui frapperas la face d'un mezzo mandritto.
 
-**La dix-septième offense** est qu'en marchant avec le pied gauche vers son côté droit, tu lui tourneras un roverso à sa tempe droite. Là, tu prendras ton épée en son milieu avec la main de bocle en lui donnant par l'intérieur de la main dans le visage, ou alors tu lui tireras bien les cheveux. Le contre est que pendant qu'il viendra pour te donner le roverso, tu feras aussitôt une demi-volte du poing te défendant de cela. Et quand il prendra son épée au milieu pour te donner un coup au visage, tu percuteras le bras arrivant avec le rebord de la bocle en lui donnant un autre mandritto à la face.
+La dix-septième offense est qu'en marchant avec le pied gauche vers son côté droit, tu lui tourneras un roverso à sa tempe droite. Là, tu prendras ton épée en son milieu avec la main de bocle en lui donnant par l'intérieur de la main dans le visage, ou alors tu lui tireras bien les cheveux. Le contre est que pendant qu'il viendra pour te donner le roverso, tu feras aussitôt une demi-volte du poing te défendant de cela. Et quand il prendra son épée au milieu pour te donner un coup au visage, tu percuteras le bras arrivant avec le rebord de la bocle en lui donnant un autre mandritto à la face.
 
 # 
 
@@ -828,7 +828,7 @@ Ainsi je veux conclure que même si à présent je ne suis pas venu devant les h
 
 # Chapitre Premier
 
-Étant avec **l’épée et la grande bocle** bien arrangé avec le pied gauche devant, le bras de bocle bien tendu vers l’ennemi et l’épée en coda longa e alta, tu ramèneras le pied droit auprès du gauche et tu marcheras en avant avec le pied gauche sans tirer aucun coup. Parce que te rapprochant ainsi de ton ennemi, il sera forcé de faire une de ces deux choses, soit attaquer, soit fuir. Et supposons qu’il te tire une stoccata avec le pied gauche devant.
+Étant avec l’épée et la grande bocle bien arrangé avec le pied gauche devant, le bras de bocle bien tendu vers l’ennemi et l’épée en coda longa e alta, tu ramèneras le pied droit auprès du gauche et tu marcheras en avant avec le pied gauche sans tirer aucun coup. Parce que te rapprochant ainsi de ton ennemi, il sera forcé de faire une de ces deux choses, soit attaquer, soit fuir. Et supposons qu’il te tire une stoccata avec le pied gauche devant.
 
 Tu pourras faire plusieurs contres à cette stoccata. Soit tu passeras avec le pied droit vers son côté gauche en lui tirant dans ce même temps un roverso dans le bras d’épée, avec la jambe gauche suivant la droite par-derrière. Et pour te couvrir, tu te retireras rapidement en arrière du pied droit et t’arrangeant en coda longa e alta comme j’ai dit ci-dessus.
 
@@ -840,7 +840,7 @@ Tu peux également marcher avec le pied droit devant vers son côté gauche en l
 
 Tu pourras également passer avec le pied droit devant un peu vers son côté gauche en faisant plonger avec le droit fil de ton épée dans ce temps la stoccata poussée. Là, en lui tirant un roverso à la face, tu tireras le pied droit en arrière. Tu pousseras ensuite une punta en guardia di faccia pour ta défense et tu t’arrangeras dans la précédente garde.
 
-**Et ainsi les contres à la stoccata sont terminés.**
+Et ainsi les contres à la stoccata sont terminés.
 
 Maintenant je parlerai des contres qui peuvent se faire contre quelqu’un qui te pousse une stoccata pour te frapper d’un mandritto à la place, vous trouvant tous les deux avec le pied gauche devant en coda longa e alta.
 
@@ -1238,47 +1238,47 @@ Si tu as la lance et que tu es assailli par quelqu’un qui a une pertuisane, un
 
 J’ai fini les chapitres ou les règles générales sur le valeureux et belliqueux art de l’escrime. 
 
-**Imprimé à Venise par Nicolo d’Aristotile dit Zoppino.**
+Imprimé à Venise par Nicolo d’Aristotile dit Zoppino.
 
-**1531\.**
+1531\.
 
 [^1]:  Falso : le faux, soit le faux tranchant, ou faux fil, de l’épée, le tranchant qui regarde vers nous quand on tient l’épée vers l’avant, en opposition au vrai tranchant, ou droit fil. Le terme falso est aussi utilisé pour désigner une frappe avec ce faux tranchant.
 
-[^2]:  *Traversato* : de *traversare,* à travers ou croiser
+[^2]:  Traversato : de traversare, à travers ou croiser
 
-[^3]:  Certainement en *porta di ferro larga* donc
+[^3]:  Certainement en porta di ferro larga donc
 
-[^4]:  *Trapassando *: vient de *trapassare*, passer outre, passer devant
+[^4]:  Trapassando : vient de trapassare, passer outre, passer devant
 
-[^5]:  *Mezzo mandritto *: demi-maindroit, le terme demi indique que la frappe se termine avec la pointe de l’épée dirigée vers l’adversaire. Cette frappe est dite aussi réalisée sur un demi temps.
+[^5]:  Mezzo mandritto : demi-maindroit, le terme demi indique que la frappe se termine avec la pointe de l’épée dirigée vers l’adversaire. Cette frappe est dite aussi réalisée sur un demi temps.
 
-[^6]:  *Spinto *: poussé, il s’agit peut-être de faire le *roverso* à la façon d’une entaille mais en poussant vers l’avant
+[^6]:  Spinto : poussé, il s’agit peut-être de faire le roverso à la façon d’une entaille mais en poussant vers l’avant
 
-[^7]:  Il manque ici le contre au premier *roverso*
+[^7]:  Il manque ici le contre au premier roverso
 
 [^8]:  Cette défense ne correspond ici à aucune des attaques décrites dans le chapitre précédent
 
-[^9]:  *Punta trivellata* : pointe vissée, certainement un estoc donné avec un mouvement de rotation du poignet
+[^9]:  Punta trivellata : pointe vissée, certainement un estoc donné avec un mouvement de rotation du poignet
 
 [^10]:  Cette défense ne correspond à aucune des attaques données au chapitre précédent
 
-[^11]:  *Proponimento *: le dessein, le propos, l’intention selon le FLORIO. Manciolino entend par cela la partie de l’assaut où nous sommes au contact avec notre adversaire.
+[^11]:  Proponimento : le dessein, le propos, l’intention selon le FLORIO. Manciolino entend par cela la partie de l’assaut où nous sommes au contact avec notre adversaire.
 
 [^12]:  Umbo : partie centrale de la bocle en forme de bosse.
 
-[^13]:  *Stare : *rester au premier sens, il peut prendre le sens de regarder dans certains cas.
+[^13]:  Stare : rester au premier sens, il peut prendre le sens de regarder dans certains cas.
 
-[^14]:  *Ritoccare *: défini par l’action de toucher la bocle du pommeau.
+[^14]:  Ritoccare : défini par l’action de toucher la bocle du pommeau.
 
 [^15]:  Manciolino parle ici du pied droit. Le mot pied est en général oublié, il précise juste le droit ou le gauche.
 
-[^16]:  *Traversale* : équivalent à *trasversale¸ *signifiant qui va de travers, en croix.
+[^16]:  Traversale : équivalent à trasversale¸ signifiant qui va de travers, en croix.
 
-[^17]:  *Sopra mano* : par-dessus la main, frappe avec la main d’épée élevée en haut à droite. Cette frappe est appelée *imbrocatta* chez d’autres auteurs.
+[^17]:  Sopra mano : par-dessus la main, frappe avec la main d’épée élevée en haut à droite. Cette frappe est appelée imbrocatta chez d’autres auteurs.
 
-[^18]:  *Stoccata roversa *: une estocade reverse, c’est à dire avec la main sur notre côté gauche tenant l’épée en supination
+[^18]:  Stoccata roversa : une estocade reverse, c’est à dire avec la main sur notre côté gauche tenant l’épée en supination
 
-[^19]:  *Ricourar* : *Ricouro* équivalent à *Ricovere* selon le FLORIO, mettre à l’abri
+[^19]:  Ricourar : Ricouro équivalent à Ricovere selon le FLORIO, mettre à l’abri
 
 [^20]:  Pointe de l’épaule : correspond environ à la jonction de l’omoplate et de l’humerus
 
