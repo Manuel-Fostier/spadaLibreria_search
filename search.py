@@ -5,6 +5,7 @@ Usage:
     python search.py
     python search.py --query "votre paragraphe" --sources marozzo_book3 anonimo_epee_deux_mains
     python search.py --sources marozzo_book3 --exclude-section 164 166 --query "votre paragraphe"
+    python search.py --sources marozzo_book3 --include-section 161 --exclude-section 164 166 --n-results 10 --query "votre paragraphe"
 """
 
 import argparse
@@ -89,6 +90,18 @@ def _is_excluded_hit(meta: dict, exclude_sections: list[str]) -> bool:
     return False
 
 
+def _is_included_hit(meta: dict, include_sections: list[str]) -> bool:
+    if not include_sections:
+        return True
+    section = meta.get("section", "").lower()
+    subsection = meta.get("subsection", "").lower()
+    for token in include_sections:
+        t = token.lower().strip()
+        if t and (t in section or t in subsection):
+            return True
+    return False
+
+
 def search_sources(
     query: str,
     source_ids: list[str],
@@ -96,13 +109,15 @@ def search_sources(
     embeddings: OllamaEmbeddings,
     n_results: int = N_RESULTS,
     exclude_sections: list[str] | None = None,
+    include_sections: list[str] | None = None,
 ) -> list[dict]:
     exclude_sections = exclude_sections or []
+    include_sections = include_sections or []
     query_embedding = embeddings.embed_query(query)
 
     where_filter = {"source_id": {"$in": source_ids}} if len(source_ids) > 1 else {"source_id": source_ids[0]}
 
-    fetch_multiplier = 4 if exclude_sections else 1
+    fetch_multiplier = 4 if (exclude_sections or include_sections) else 1
 
     results = collection.query(
         query_embeddings=[query_embedding],
@@ -113,6 +128,8 @@ def search_sources(
 
     hits = []
     for doc, meta, dist in zip(results["documents"][0], results["metadatas"][0], results["distances"][0]):
+        if not _is_included_hit(meta, include_sections):
+            continue
         if _is_excluded_hit(meta, exclude_sections):
             continue
 
@@ -333,10 +350,22 @@ def main():
     parser.add_argument("--query", type=str, help="Paragraphe à rechercher")
     parser.add_argument("--sources", nargs="+", help="source_ids à chercher")
     parser.add_argument(
+        "--include-section",
+        nargs="+",
+        default=[],
+        help="Mots-clés de section/sous-section à inclure (ex: 161 Première partie)",
+    )
+    parser.add_argument(
         "--exclude-section",
         nargs="+",
         default=[],
         help="Mots-clés de section/sous-section à exclure (ex: 164 166)",
+    )
+    parser.add_argument(
+        "--n-results",
+        type=int,
+        default=N_RESULTS,
+        help=f"Nombre de résultats à afficher (défaut: {N_RESULTS})",
     )
     args = parser.parse_args()
 
@@ -364,7 +393,9 @@ def main():
             args.sources,
             collection,
             embeddings,
+            n_results=max(1, args.n_results),
             exclude_sections=args.exclude_section,
+            include_sections=args.include_section,
         )
         display_results(hits, " + ".join(args.sources), args.query)
     else:
