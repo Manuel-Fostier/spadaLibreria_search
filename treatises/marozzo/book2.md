@@ -5,7 +5,7 @@ book: "book2"
 source_id: "marozzo_book2"
 language: "fr"
 ---
-# [OPERA NOVA](https://wiktenauer.com/wiki/Opera_Nova_(Achille_Marozzo))
+# OPERA NOVA)
 
 # Livre 2 - L'épée accompagnée et seule
 

@@ -482,9 +482,9 @@ Aller au jeu
 
 Premièrement, t’opposant à ton ennemi, tu te placeras dans un coin de la salle ou d’un autre emplacement spacieux, joyeusement arrangé de ta personne, debout avec l’épée et la bocle en mains de sorte que chaque mouvement, chaque façon et chaque geste soient pleins de grâce.
 
-1. Et en voulant aller vers ton ennemi, tu passeras avec le pied droit de travers vers ton côté droit, et dans ce déplacement tu donneras un coup de falso dans l’umbo[^12] de la bocle tout en plaçant l’épée en [guardia alta](https://docs.google.com/document/d/1bsFdJElTqcTTZJ9zSv_7ZyReIbxiqvSS/edit#heading=h.3znysh7), et ta bocle doit regarder[^13] vers le visage à la façon d’un miroir.
+1. Et en voulant aller vers ton ennemi, tu passeras avec le pied droit de travers vers ton côté droit, et dans ce déplacement tu donneras un coup de falso dans l’umbo[^12] de la bocle tout en plaçant l’épée en guardia alta, et ta bocle doit regarder[^13] vers le visage à la façon d’un miroir.
 
-2. En passant ensuite avec le pied gauche devant, tu retoucheras[^14] la bocle arrangeant l’épée en [guardia di testa](https://docs.google.com/document/d/1bsFdJElTqcTTZJ9zSv_7ZyReIbxiqvSS/edit#heading=h.3znysh7) et tombant la bocle le long de la cuisse gauche.
+2. En passant ensuite avec le pied gauche devant, tu retoucheras[^14] la bocle arrangeant l’épée en guardia di testa et tombant la bocle le long de la cuisse gauche.
 
 3. De là, tu marcheras avec le pied droit devant en levant l’épée en guardia alta.
 
@@ -506,25 +506,25 @@ Quand tu seras auprès de l’ennemi où les coups ne seront plus à réaliser d
 
 1. tu passeras d’un grand pas devant avec le pied droit en lui tirant un mandritto à la face qui ira par-dessus le bras.
 
-2. Tu retourneras de roverso en faisant tomber l’épée en [coda longa e stretta](https://docs.google.com/document/d/1bsFdJElTqcTTZJ9zSv_7ZyReIbxiqvSS/edit#heading=h.415t9al).
+2. Tu retourneras de roverso en faisant tomber l’épée en coda longa e stretta.
 
 3. Là, tu feras que la bocle couvre bien la tête et retourneras aussitôt avec un montante jusqu’en guardia alta où il convient que tu tires le pied droit le long du gauche.
 
 De là, en passant avec le pied droit, 
 
-1. tu tireras un fendente jusqu’en [guardia di faccia](https://docs.google.com/document/d/1bsFdJElTqcTTZJ9zSv_7ZyReIbxiqvSS/edit#heading=h.2et92p0).
+1. tu tireras un fendente jusqu’en guardia di faccia.
 
-2. Ensuite tu passeras avec le gauche vers son côté droit et dans ce temps tu tireras un [tramazzone](https://docs.google.com/document/d/1bsFdJElTqcTTZJ9zSv_7ZyReIbxiqvSS/edit#heading=h.lnxbz9) tombant en [cinghiara porta di ferro](https://docs.google.com/document/d/1bsFdJElTqcTTZJ9zSv_7ZyReIbxiqvSS/edit#heading=h.3rdcrjn) en opposant la bocle à la tête.
+2. Ensuite tu passeras avec le gauche vers son côté droit et dans ce temps tu tireras un tramazzone tombant en cinghiara porta di ferro en opposant la bocle à la tête.
 
 3. Ensuite en passant d’un grand pas avec le pied droit, tu feras un falso transversal[^16] à la face de l’ennemi de sorte que l’épée s’élève ensuite en guardia alta.
 
 1. Tu tireras un mandritto par-dessus le bras, à la tête ou à la face, en ramenant le pied droit auprès du gauche.
 
-2. Puis tu repasseras avec ce pied droit d’un grand pas en jetant le poing d’épée en haut et en tirant un mandritto à la face qui va sous le bras ([guardia di sotto bracchio](https://docs.google.com/document/d/1bsFdJElTqcTTZJ9zSv_7ZyReIbxiqvSS/edit#heading=h.1ksv4uv)).
+2. Puis tu repasseras avec ce pied droit d’un grand pas en jetant le poing d’épée en haut et en tirant un mandritto à la face qui va sous le bras (guardia di sotto bracchio).
 
 3. Ensuite, tu retireras le pied droit à côté du gauche en mettant bien la bocle.
 
-4. De là, en marchant devant de même avec le droit, tu feras un falso jusqu’en guardia di faccia accompagné de deux tramazzoni de sorte que le dernier se termine en [porta di ferro stretta](https://docs.google.com/document/d/1bsFdJElTqcTTZJ9zSv_7ZyReIbxiqvSS/edit#heading=h.17dp8vu).
+4. De là, en marchant devant de même avec le droit, tu feras un falso jusqu’en guardia di faccia accompagné de deux tramazzoni de sorte que le dernier se termine en porta di ferro stretta.
 
 5. De là, en tirant le pied droit au gauche, tu feras un montante en guardia alta.
 
@@ -544,7 +544,7 @@ De là, en passant avec le pied droit devant,
 
 6. Cela fait, l’épée tombera en coda longa e stretta.
 
-7. Là, tu passeras avec le pied gauche devant en poussant une punta dans la face, puis en marchant avec le pied droit devant, tu lui tourneras avec un tramazzone à la tête qui tombe en [porta di ferro stretta](https://docs.google.com/document/d/1bsFdJElTqcTTZJ9zSv_7ZyReIbxiqvSS/edit#heading=h.17dp8vu) en défendant bien la tête avec la bocle.
+7. Là, tu passeras avec le pied gauche devant en poussant une punta dans la face, puis en marchant avec le pied droit devant, tu lui tourneras avec un tramazzone à la tête qui tombe en porta di ferro stretta en défendant bien la tête avec la bocle.
 
 8. Ensuite, tu feras un montante ramenant l’épée en guardia alta tout en tirant le pied droit le long du gauche.
 
@@ -560,7 +560,7 @@ Puis
 
 4. Puis en passant avec le pied droit devant, tu lui tourneras un autre tramazzone bien dans la face suivi d’une punta accompagnée de ta bocle en guardia di faccia.
 
-5. Puis tu tourneras le troisième tramazzone à la tête, lequel tombera en [porta di ferro stretta](https://docs.google.com/document/d/1bsFdJElTqcTTZJ9zSv_7ZyReIbxiqvSS/edit#heading=h.17dp8vu).
+5. Puis tu tourneras le troisième tramazzone à la tête, lequel tombera en porta di ferro stretta.
 
 6. Tu feras alors un montante en guardia alta en tirant le pied droit auprès du gauche 
 
@@ -568,7 +568,7 @@ Puis
 
 Cela fait,
 
-1. tu feras une estrette de la mi-épée. C’est-à-dire que tu marcheras du pied droit devant d’un grand pas en tirant un mandritto sous le bras ([guardia di sotto bracchio](https://docs.google.com/document/d/1bsFdJElTqcTTZJ9zSv_7ZyReIbxiqvSS/edit#heading=h.1ksv4uv))..
+1. tu feras une estrette de la mi-épée. C’est-à-dire que tu marcheras du pied droit devant d’un grand pas en tirant un mandritto sous le bras (guardia di sotto bracchio)..
 
 2. Tu ramèneras ensuite le pied droit à côté du gauche et tu retourneras d’un grand pas devant avec le pied droit en faisant un falso traversato jusqu’en guardia di faccia.
 

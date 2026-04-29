@@ -5,7 +5,7 @@ book: "book1"
 source_id: "marozzo_book1"
 language: "fr"
 ---
-# [OPERA NOVA](https://wiktenauer.com/wiki/Opera_Nova_(Achille_Marozzo))
+# OPERA NOVA)
 
 # Livre 1 - L'épée bocle
 

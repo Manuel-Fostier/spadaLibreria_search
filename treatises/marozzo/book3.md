@@ -5,7 +5,7 @@ book: "book3"
 source_id: "marozzo_book3"
 language: "fr"
 ---
-# [OPERA NOVA](https://wiktenauer.com/wiki/Opera_Nova_(Achille_Marozzo))
+# OPERA NOVA)
 
 # Livre 3 - l'épée à deux mains
 
