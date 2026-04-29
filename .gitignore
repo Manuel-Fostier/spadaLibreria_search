@@ -1,11 +1,7 @@
-# Python
-.venv/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.env
+# QMD index (généré par qmd embed)
+index.sqlite
+index.sqlite-shm
+index.sqlite-wal
 
-# ChromaDB generated files
-chroma_db/*
-!chroma_db/.gitkeep
+# Environnement
+.env

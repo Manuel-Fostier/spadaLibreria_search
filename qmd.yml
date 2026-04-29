@@ -1,0 +1,4 @@
+collections:
+  hema:
+    path: ./treatises
+    pattern: "**/*.md"

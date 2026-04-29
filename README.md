@@ -1,97 +1,49 @@
 # 🗡 spadaLibreria_search
 
-Outil de recherche sémantique **100% locale** pour traités d'escrime HEMA (Historical European Martial Arts) numérisés et convertis en Markdown.
+Moteur de recherche hybride **100% local** pour traités d'escrime HEMA (Historical European Martial Arts) numérisés et convertis en Markdown.
+
+Propulsé par [QMD](https://github.com/tobi/qmd) — BM25 full-text + recherche vectorielle sémantique + re-ranking LLM, sans aucune donnée envoyée en dehors de votre machine.
 
 ## Fonctionnalités
 
-- Recherche sémantique par similarité vectorielle dans les traités indexés
-- Expansion conditionnelle de la recherche (Phase 1 → Phase 2 si résultats concluants)
-- Évaluation des résultats par un LLM local via [Ollama](https://ollama.com)
-- Interface CLI avec scores de similarité colorés (Rich)
+- **BM25** : recherche plein texte exacte et exhaustive (termes techniques, noms de gardes)
+- **Vectoriel** : recherche sémantique par similarité (même concept, formulation différente)
+- **Hybride + re-ranking** : fusion RRF + LLM re-ranker pour la meilleure précision
+- **MCP server** : intégration native avec Claude Desktop
 - Aucune donnée ne quitte votre machine
 
 ## Prérequis
 
-- Python 3.10+
-- [Ollama](https://ollama.com) installé et en cours d'exécution
+- Node.js >= 22
+- [QMD](https://github.com/tobi/qmd)
+
+### Installation de Node.js (via fnm, sans sudo)
 
 ```bash
-ollama pull llama3.2
-ollama pull nomic-embed-text
-```
+curl -fsSL https://fnm.vercel.app/install | bash -s -- --install-dir "$HOME/.local/bin" --skip-shell
 
-### Cas WSL (Ollama installé sur Windows hôte)
+# Ajouter à ~/.zshrc
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(fnm env --use-on-cd)"' >> ~/.zshrc
 
-Si vous lancez les scripts depuis WSL mais qu'Ollama tourne sur Windows, l'API doit être accessible depuis WSL.
-
-1. Sur Windows, démarrez Ollama en exposant le service:
-
-```powershell
-$env:OLLAMA_HOST = "0.0.0.0:11434"
-ollama serve
-```
-
-2. Dans WSL, récupérez l'IP de l'hôte Windows (passerelle par défaut) et exportez l'URL:
-
-```bash
-WIN_HOST=$(ip route | awk '/default/ {print $3; exit}')
-export OLLAMA_BASE_URL="http://$WIN_HOST:11434"
-```
-
-Si la passerelle ne répond pas dans votre environnement, essayez le fallback:
-
-```bash
-WIN_HOST=$(awk '/nameserver/ {print $2; exit}' /etc/resolv.conf)
-export OLLAMA_BASE_URL="http://$WIN_HOST:11434"
-```
-
-3. Testez l'accès:
-
-```bash
-curl "$OLLAMA_BASE_URL/api/tags"
-```
-
-4. Rendez la configuration persistante dans `~/.zshrc`:
-
-```bash
-cat <<'EOF' >> ~/.zshrc
-
-# Auto-configure Ollama URL in WSL if not explicitly set.
-if grep -qi microsoft /proc/version 2>/dev/null; then
-  if [[ -z "$OLLAMA_BASE_URL" && -z "$OLLAMA_HOST" ]]; then
-    WIN_HOST=$(ip route 2>/dev/null | awk '/default/ {print $3; exit}')
-    if [[ -z "$WIN_HOST" ]]; then
-      WIN_HOST=$(awk '/nameserver/ {print $2; exit}' /etc/resolv.conf 2>/dev/null)
-    fi
-    if [[ -n "$WIN_HOST" ]]; then
-      export OLLAMA_BASE_URL="http://$WIN_HOST:11434"
-    fi
-    unset WIN_HOST
-  fi
-fi
-EOF
-```
-
-5. Rechargez votre shell puis vérifiez:
-
-```bash
 source ~/.zshrc
-echo "$OLLAMA_BASE_URL"
-curl "$OLLAMA_BASE_URL/api/tags"
+fnm install 22
+fnm use 22
 ```
 
-Les scripts `ingest.py` et `search.py` utilisent automatiquement `OLLAMA_BASE_URL` (ou `OLLAMA_HOST`).
+### Installation de QMD
 
-## Installation
+```bash
+npm install -g @tobilu/qmd
+```
+
+Les modèles GGUF (embedding, re-ranking, query expansion) sont téléchargés automatiquement depuis HuggingFace au premier usage (~2 Go au total).
+
+## Installation du projet
 
 ```bash
 git clone https://github.com/Manuel-Fostier/spadaLibreria_search.git
 cd spadaLibreria_search
-
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-
-pip install -r requirements.txt
 ```
 
 ## Utilisation
@@ -99,59 +51,85 @@ pip install -r requirements.txt
 ### 1. Indexer les traités
 
 ```bash
-python ingest.py
+qmd collection add ./treatises --name hema
+qmd embed
 ```
 
-### 2. Lancer la recherche interactive
+### 2. Recherche BM25 — termes exacts et exhaustifs
 
 ```bash
-python search.py
+# Toutes les occurrences exactes d'un terme
+qmd search "deux empans"
+
+# Recherche dans la collection hema uniquement
+qmd search "falso dritto" -c hema
 ```
 
-### 3. Recherche directe en ligne de commande
+### 3. Recherche hybride — sémantique + BM25 + re-ranking (recommandée)
 
 ```bash
-python search.py --sources marozzo_book3 anonimo_epee_deux_mains \
-  --query "Quando voi fare un colpo di taglia, si deve avanzare il piede destro..."
+# Hybride avec re-ranking LLM (meilleure qualité)
+qmd query "deux empans falso dritto"
+
+# Coller un extrait d'un traité pour trouver des passages parallèles
+qmd query "tu jetteras le pied droit deux empans derrière le gauche et alors tu tireras un falso dritto de bas en haut aux mains"
+
+# Plusieurs concepts
+qmd query "guardia di faccia porta di ferro alta"
 ```
 
-### 4. Recherche multi-query
-
-Chaque requête est exécutée séparément et affichée dans son propre tableau, précédé du texte exact de la requête.
+### 4. Recherche vectorielle seule
 
 ```bash
-python search.py --sources marozzo_book3 \
-  --query "falso dritto de bas en haut aux mains, porta di ferro alta" \
-  --query "Guardia di faccia" \
-  --query "Guardia di Croce"
+qmd vsearch "retraite suivie d'un coup ascendant aux mains"
 ```
 
-## Format des traités
+### 5. Modes de sortie pour les agents / scripts
 
-Chaque fichier `.md` doit avoir un frontmatter YAML :
+```bash
+# JSON structuré
+qmd query --json "falso dritto"
+
+# Chemins seuls (pour piping)
+qmd search --files "deux empans"
+
+# Contenu complet des documents matchés
+qmd query --full "guardia di testa"
+```
+
+## Intégration MCP avec Claude Desktop
+
+QMD expose un serveur MCP. Depuis WSL, utiliser le transport HTTP :
+
+```bash
+# Démarrer le serveur MCP en arrière-plan
+qmd mcp --http --daemon
+
+# Vérifier qu'il tourne
+qmd status
+```
+
+Configuration Claude Desktop (`%APPDATA%\Claude\claude_desktop_config.json` sur Windows) :
+
+```json
+{
+  "mcpServers": {
+    "qmd": {
+      "url": "http://localhost:8181/mcp"
+    }
+  }
+}
+```
+
+## Configuration QMD
+
+Le fichier `qmd.yml` à la racine du projet :
 
 ```yaml
----
-author: "Marozzo"
-title: "Opera Nova - Libro Terzo"
-book: "book3"
-source_id: "marozzo_book3"
-language: "it"
----
-```
-
-Le champ `source_id` est l'identifiant utilisé dans les prompts de recherche.
-
-## Exemple de prompt interactif
-
-```
-> Votre prompt :
-Recherche des paragraphes similaires dans le livre 3 de Marozzo puis dans
-la partie sur l'épée à 2 mains de l'Anonimo. Si les résultats sont concluants,
-recherche dans les livres 1 et 2 de Marozzo et dans l'Opera nova de Manciolino.
-Quando voi fare un colpo di taglia, si deve avanzare il piede destro...
-
-[ligne vide × 2 pour valider]
+collections:
+  hema:
+    path: ./treatises
+    pattern: "**/*.md"
 ```
 
 ## Structure du projet
@@ -164,31 +142,26 @@ spadaLibreria_search/
 │   │   ├── book1.md
 │   │   ├── book2.md
 │   │   └── book3.md
-│   ├── anonimo/
-│   │   └── epee_deux_mains.md
 │   └── manciolino/
 │       └── opera_nova.md
-├── chroma_db/        # Base vectorielle (générée par ingest.py)
-├── ingest.py         # Script d'indexation
-├── search.py         # Script de recherche
-├── requirements.txt
+├── qmd.yml           # Configuration des collections
 └── README.md
 ```
 
-## Sources d'exemple incluses
+## Sources incluses
 
-| `source_id` | Auteur | Livre |
+| Auteur | Livre | Fichier |
 |---|---|---|
-| `marozzo_book1` | Marozzo | Opera Nova - Libro Primo |
-| `marozzo_book2` | Marozzo | Opera Nova - Libro Secondo |
-| `marozzo_book3` | Marozzo | Opera Nova - Libro Terzo |
-| `anonimo_epee_deux_mains` | Anonimo | Trattato - Spada a due mani |
-| `manciolino_opera_nova` | Manciolino | Opera Nova |
+| Marozzo | Opera Nova - Libro Primo | `treatises/marozzo/book1.md` |
+| Marozzo | Opera Nova - Libro Secondo | `treatises/marozzo/book2.md` |
+| Marozzo | Opera Nova - Libro Terzo | `treatises/marozzo/book3.md` |
+| Manciolino | Opera Nova | `treatises/manciolino/opera_nova.md` |
 
-## Scores de similarité
+## Scores QMD
 
-| Couleur | Score | Interprétation |
-|---|---|---|
-| Vert | ≥ 0.75 | Très similaire — passage probablement lié |
-| Jaune | 0.60 – 0.74 | Similaire — à vérifier |
-| Rouge | < 0.60 | Faible similarité |
+| Score | Interprétation |
+|---|---|
+| 0.8 – 1.0 | Très pertinent |
+| 0.5 – 0.8 | Modérément pertinent |
+| 0.2 – 0.5 | Peu pertinent |
+| < 0.2 | Faible pertinence |
